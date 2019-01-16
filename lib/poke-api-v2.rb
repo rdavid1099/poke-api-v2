@@ -5,7 +5,6 @@ require 'poke_api/version'
 
 module PokeApi
   def self.pokedex(id:, name:)
-    raise_too_many_args_error('id:', 'name:') if id && name
-    req_id = id ||
+    ErrorHandling.raise_too_many_args_error if id && name
   end
 end
