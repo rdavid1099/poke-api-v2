@@ -1,7 +1,5 @@
-require 'utils/error_handling'
-
-require 'poke_api/pokemon'
-require 'poke_api/version'
+PATH = File.dirname(__FILE__)
+require_relative './config/setup'
 
 module PokeApi
   def self.pokedex(id:, name:)
