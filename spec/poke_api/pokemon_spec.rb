@@ -16,6 +16,7 @@ RSpec.describe Pokemon, vcr: {cassette_name: 'pokemon_charizard_response'}  do
     it 'pulls a random pokemon stats' do
       pokemon = Pokemon.random
 
+      expect(pokemon.class).to eq(Pokemon)
       expect(pokemon.name).to eq("charizard")
     end
   end
