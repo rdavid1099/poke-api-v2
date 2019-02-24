@@ -1,5 +1,13 @@
 require "bundler/setup"
-require "poke/api/v2"
+require "vcr"
+require "pry"
+require "./lib/config/setup"
+
+VCR.configure do |c|
+  c.cassette_library_dir     = 'spec/cassettes'
+  c.stub_with                :webmock
+  c.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
