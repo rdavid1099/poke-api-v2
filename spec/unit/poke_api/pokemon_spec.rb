@@ -1,4 +1,3 @@
-require './spec/spec_helper'
 include ApiHelperMethods
 
 RSpec.describe Pokemon, vcr: {cassette_name: 'make_pokemon_http_request'}  do

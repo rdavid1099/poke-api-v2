@@ -1,5 +1,3 @@
-require './spec/spec_helper'
-
 RSpec.describe Fetcher, :vcr  do
   describe '#call' do
     it 'makes api call using given params and returns parsed json' do

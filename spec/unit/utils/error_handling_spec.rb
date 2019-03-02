@@ -1,5 +1,3 @@
-require './spec/spec_helper'
-
 RSpec.describe ErrorHandling do
   describe '#raise_too_many_args_error' do
     it 'raises an exception if both id and name are given' do

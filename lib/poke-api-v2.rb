@@ -1,5 +1,6 @@
 require_relative './config/setup'
 
+# Main module for gem operation
 module PokeApi
   def self.pokedex(id: nil, name: nil)
     ErrorHandling.raise_too_many_args_error if id && name
