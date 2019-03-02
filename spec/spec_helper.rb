@@ -1,8 +1,10 @@
 require "bundler/setup"
 require "vcr"
 require "pry"
-require "./lib/config/setup"
+require 'simplecov'
+SimpleCov.start
 
+require "./lib/config/setup"
 helper_path = File.expand_path(File.dirname(__FILE__))
 Dir.glob("#{helper_path}/support/**/*.rb").each { |file| require "#{file.sub('.rb','')}" }
 
