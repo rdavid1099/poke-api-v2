@@ -1,5 +1,3 @@
-require './spec/spec_helper'
-
 RSpec.describe PokeApi, :vcr  do
   describe 'version' do
     it 'should be the correct number' do
