@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-path = File.expand_path(File.dirname(__FILE__))
+path = __dir__
 Dir.glob("#{path}/../**/*.rb").each do |file|
-  require "#{file.sub('.rb','')}" unless file.split("/").last == "setup.rb"
+  require file.sub('.rb', '').to_s unless file.split('/').last == 'setup.rb'
 end
