@@ -39,11 +39,25 @@ RSpec.describe PokeApi, :vcr  do
     it 'sets correct BASE_URI value' do
       expect(BASE_URI).to eq("https://pokeapi.co/api/v2/")
     end
-    it 'sets correct ENDPOINTS[:pokemon] value' do
-      expect(ENDPOINTS[:pokemon]).to eq('pokemon/')
-    end
+
     it 'sets correct POKEMON_COUNT value' do
       expect(POKEMON_COUNT).to eq(751)
+    end
+
+    context 'ENDPOINTS' do
+      it 'sets correct :pokemon value' do
+        expect(ENDPOINTS[:pokemon]).to eq('pokemon/')
+      end
+
+      it 'sets correct :version value' do
+        expect(ENDPOINTS[:version]).to eq('version/')
+      end
+    end
+
+    context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :version value' do
+        expect(ENDPOINT_OBJECTS[:version]).to eq(PokeApi::Version)
+      end
     end
   end
 end
