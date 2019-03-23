@@ -36,5 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.65.0'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'rb-readline'
   spec.add_development_dependency 'simplecov'
 end
