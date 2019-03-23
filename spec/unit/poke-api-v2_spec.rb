@@ -27,9 +27,9 @@ RSpec.describe PokeApi, :vcr  do
   end
 
   describe '#get' do
-    scenario 'version' do
+    context 'version' do
       it 'gets version using id' do
-        result = PokeApi.get(versoin: 1)
+        result = PokeApi.get(version: 1)
         expect(result.class).to eq(PokeApi::Version)
       end
     end
