@@ -1,7 +1,7 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'poke_api/version'
+require 'config/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'poke-api-v2'
