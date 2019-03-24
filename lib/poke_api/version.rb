@@ -4,11 +4,17 @@ module PokeApi
     attr_reader :id,
                 :name,
                 :names,
-                :version_groups
+                :version_group
     def initialize(data)
-      @id    = data[:id]
-      @name  = data[:name]
-      # @names = sanitize_names_list(data[:names])
+      @id            = data[:id]
+      @name          = data[:name]
+      @names         = sanitize_names_list(data[:names])
+    end
+
+    private
+
+    def sanitize_names_list(raw_names)
+      raw_names.map { |raw_name| Name.new(raw_name) }
     end
   end
 end
