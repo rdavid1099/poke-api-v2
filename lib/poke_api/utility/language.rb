@@ -1,7 +1,7 @@
 module PokeApi
   module Utility
     # Utility Language object used by several PokeApi endpoints
-    class Language
+    class Language < NamedApiResource
       attr_reader :name,
                   :url
 

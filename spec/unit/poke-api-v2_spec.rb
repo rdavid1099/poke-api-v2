@@ -27,6 +27,11 @@ RSpec.describe PokeApi, :vcr  do
   end
 
   describe '#get' do
+    it 'stores url used in given object' do
+      result = PokeApi.get(version: 'blue')
+      expect(result.url).to eq('https://pokeapi.co/api/v2/version/blue')
+    end
+
     context 'version' do
       it 'gets version using id' do
         result = PokeApi.get(version: 1)
