@@ -60,6 +60,14 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :language value' do
+        expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
+      end
+
+      it 'sets correct :names value' do
+        expect(ENDPOINT_OBJECTS[:names]).to eq(PokeApi::Common::Name)
+      end
+
       it 'sets correct :version value' do
         expect(ENDPOINT_OBJECTS[:version]).to eq(PokeApi::Version)
       end
