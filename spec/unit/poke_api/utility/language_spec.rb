@@ -23,7 +23,12 @@ RSpec.describe PokeApi::Utility::Language, :vcr do
       language.get
 
       expect(language.class).to eq(PokeApi::Utility::Language)
+      expect(language.id).to eq(5)
+      expect(language.iso3166).to eq('fr')
+      expect(language.iso639).to eq('fr')
       expect(language.name).to eq('fr')
+      expect(language.names.first.class).to eq(PokeApi::Common::Name)
+      expect(language.official).to eq(true)
       expect(language.url).to eq('https://pokeapi.co/api/v2/language/5/')
     end
   end
