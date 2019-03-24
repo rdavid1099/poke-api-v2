@@ -2,6 +2,8 @@ module PokeApi
   # Base class with shared methods for all Named API Resources
   class NamedApiResource
     def get
+      return if id
+
       data = Fetcher.call_uri(url)
       assign_data(data)
     end
