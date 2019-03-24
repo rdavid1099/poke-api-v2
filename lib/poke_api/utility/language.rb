@@ -13,18 +13,6 @@ module PokeApi
       def initialize(data)
         assign_data(data)
       end
-
-      private
-
-      def assign_data(data)
-        @id       = data[:id]
-        @iso3166  = data[:iso3166]
-        @iso639   = data[:iso639]
-        @name     = data[:name]
-        @names    = sanitize_names_list(data[:names])
-        @official = data[:official]
-        @url      = data[:url]
-      end
     end
   end
 end
