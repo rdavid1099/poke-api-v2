@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/version-group/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Mar 2019 23:53:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6be6166e9584abb1a7c58117210bacd01553471626; expires=Mon, 23-Mar-20
+        23:53:46 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"29a-gDmr8auGTz0fW6TIHoxQt4z/IpU"
+      Function-Execution-Id:
+      - pjomsh5pga07
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - ceadd965c94a5efcd66fe92d9660d10c;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8635-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1553471627.650379,VS0,VE319
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4bcc91022f5d98a1-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"generation":{"name":"generation-i","url":"https://pokeapi.co/api/v2/generation/1/"},"id":1,"move_learn_methods":[{"name":"level-up","url":"https://pokeapi.co/api/v2/move-learn-method/1/"},{"name":"machine","url":"https://pokeapi.co/api/v2/move-learn-method/4/"},{"name":"stadium-surfing-pikachu","url":"https://pokeapi.co/api/v2/move-learn-method/5/"}],"name":"red-blue","order":1,"pokedexes":[{"name":"kanto","url":"https://pokeapi.co/api/v2/pokedex/2/"}],"regions":[{"name":"kanto","url":"https://pokeapi.co/api/v2/region/1/"}],"versions":[{"name":"red","url":"https://pokeapi.co/api/v2/version/1/"},{"name":"blue","url":"https://pokeapi.co/api/v2/version/2/"}]}'
+    http_version: 
+  recorded_at: Sun, 24 Mar 2019 23:53:46 GMT
+recorded_with: VCR 4.0.0
