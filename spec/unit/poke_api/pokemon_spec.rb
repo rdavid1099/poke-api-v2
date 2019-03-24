@@ -1,12 +1,12 @@
 include ApiHelperMethods
 
-RSpec.describe Pokemon, vcr: {cassette_name: 'make_pokemon_http_request'}  do
+RSpec.describe PokeApi::Pokemon, :vcr  do
   describe '#initialize' do
     it 'creates a Pokemon object from raw json data' do
-      raw_data = make_pokemon_http_request
-      pokemon = Pokemon.new(raw_data)
+      raw_data = make_http_request(:pokemon, 6)
+      pokemon = PokeApi::Pokemon.new(raw_data)
 
-      expect(pokemon.class).to eq(Pokemon)
+      expect(pokemon.class).to eq(PokeApi::Pokemon)
       expect(pokemon.name).to eq("charizard")
       expect(pokemon.base_experience).to eq(240)
       expect(pokemon.height).to eq(17)
