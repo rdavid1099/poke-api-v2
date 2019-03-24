@@ -14,7 +14,7 @@ module PokeApi
     private
 
     def sanitize_names_list(raw_names)
-      raw_names.map { |raw_name| Name.new(raw_name) }
+      raw_names.map { |raw_name| Common::Name.new(raw_name) }
     end
   end
 end
