@@ -10,7 +10,7 @@ RSpec.describe PokeApi::Version, :vcr do
       expect(version.id).to eq(1)
       expect(version.name).to eq('red')
       expect(version.names.length).to eq(5)
-      expect(version.names.first.class).to eq(PokeApi::Name)
+      expect(version.names.first.class).to eq(PokeApi::Common::Name)
     end
   end
 end

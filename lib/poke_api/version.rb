@@ -1,20 +1,14 @@
 module PokeApi
   # Version object handling all data fetched from /version
-  class Version
+  class Version < NamedApiResource
     attr_reader :id,
                 :name,
                 :names,
+                :url,
                 :version_group
+
     def initialize(data)
-      @id            = data[:id]
-      @name          = data[:name]
-      @names         = sanitize_names_list(data[:names])
-    end
-
-    private
-
-    def sanitize_names_list(raw_names)
-      raw_names.map { |raw_name| Name.new(raw_name) }
+      assign_data(data)
     end
   end
 end
