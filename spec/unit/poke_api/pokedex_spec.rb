@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Pokedex, :vcr do
       expect(pokedex.is_main_series).to eq(true)
       expect(pokedex.names.first.class).to eq(PokeApi::Common::Name)
       expect(pokedex.pokemon_entries.first.class).to eq(PokeApi::Pokedex::PokemonEntry)
-      # expect(pokedex.region.name).to eq('kanto')
+      expect(pokedex.region.name).to eq('kanto')
       expect(pokedex.url).to eq('https://pokeapi.co/api/v2/pokedex/2')
       expect(pokedex.version_groups.first.class).to eq(PokeApi::VersionGroup)
     end
