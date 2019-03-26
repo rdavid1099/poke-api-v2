@@ -58,6 +58,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:pokemon]).to eq('pokemon/')
       end
 
+      it 'sets correct :region value' do
+        expect(ENDPOINTS[:region]).to eq('region/')
+      end
+
       it 'sets correct :version value' do
         expect(ENDPOINTS[:version]).to eq('version/')
       end
@@ -82,6 +86,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :pokemon_entries value' do
         expect(ENDPOINT_OBJECTS[:pokemon_entries]).to eq(PokeApi::Pokedex::PokemonEntry)
+      end
+
+      it 'sets correct :region value' do
+        expect(ENDPOINT_OBJECTS[:region]).to eq(PokeApi::Region)
       end
 
       it 'sets correct :version value' do
