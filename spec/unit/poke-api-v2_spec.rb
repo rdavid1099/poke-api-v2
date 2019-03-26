@@ -50,12 +50,20 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :pokedex value' do
+        expect(ENDPOINTS[:pokedex]).to eq('pokedex/')
+      end
+
       it 'sets correct :pokemon value' do
         expect(ENDPOINTS[:pokemon]).to eq('pokemon/')
       end
 
       it 'sets correct :version value' do
         expect(ENDPOINTS[:version]).to eq('version/')
+      end
+
+      it 'sets correct :version_group value' do
+        expect(ENDPOINTS[:version_group]).to eq('version-group/')
       end
     end
 
@@ -68,8 +76,20 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:names]).to eq(PokeApi::Common::Name)
       end
 
+      it 'sets correct :pokedex value' do
+        expect(ENDPOINT_OBJECTS[:pokedex]).to eq(PokeApi::Pokedex)
+      end
+
+      it 'sets correct :pokemon_entries value' do
+        expect(ENDPOINT_OBJECTS[:pokemon_entries]).to eq(PokeApi::Pokedex::PokemonEntry)
+      end
+
       it 'sets correct :version value' do
         expect(ENDPOINT_OBJECTS[:version]).to eq(PokeApi::Version)
+      end
+
+      it 'sets correct :version_group value' do
+        expect(ENDPOINT_OBJECTS[:version_group]).to eq(PokeApi::VersionGroup)
       end
     end
   end
