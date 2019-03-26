@@ -2,6 +2,7 @@ BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
   pokedex: 'pokedex/',
   pokemon: 'pokemon/',
+  region: 'region/',
   version: 'version/',
   version_group: 'version-group/'
 }.freeze
@@ -10,6 +11,7 @@ ENDPOINT_OBJECTS = {
   names: PokeApi::Common::Name,
   pokedex: PokeApi::Pokedex,
   pokemon_entries: PokeApi::Pokedex::PokemonEntry,
+  region: PokeApi::Region,
   version: PokeApi::Version,
   version_group: PokeApi::VersionGroup
 }.freeze
