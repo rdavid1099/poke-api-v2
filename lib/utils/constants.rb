@@ -1,5 +1,6 @@
 BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
+  location: 'location/',
   move_learn_method: 'move-learn-method/',
   pokedex: 'pokedex/',
   pokemon: 'pokemon/',
@@ -10,6 +11,7 @@ ENDPOINTS = {
 ENDPOINT_OBJECTS = {
   descriptions: PokeApi::Common::Description,
   language: PokeApi::Utility::Language,
+  location: PokeApi::Location,
   move_learn_method: PokeApi::MoveLearnMethod,
   names: PokeApi::Common::Name,
   pokedex: PokeApi::Pokedex,
