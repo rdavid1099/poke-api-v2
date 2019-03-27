@@ -80,6 +80,14 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :descriptions value' do
+        expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
+      end
+
+      it 'sets correct :game_indices value' do
+        expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GameIndex)
+      end
+
       it 'sets correct :language value' do
         expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
       end

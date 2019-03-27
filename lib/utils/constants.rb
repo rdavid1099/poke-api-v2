@@ -10,6 +10,7 @@ ENDPOINTS = {
 }.freeze
 ENDPOINT_OBJECTS = {
   descriptions: PokeApi::Common::Description,
+  game_indices: PokeApi::Common::GameIndex,
   language: PokeApi::Utility::Language,
   location: PokeApi::Location,
   move_learn_method: PokeApi::MoveLearnMethod,
