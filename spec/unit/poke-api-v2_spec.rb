@@ -51,6 +51,10 @@ RSpec.describe PokeApi, :vcr  do
 
     context 'ENDPOINTS' do
       it 'sets correct :move_learn_method value' do
+        expect(ENDPOINTS[:location]).to eq('location/')
+      end
+
+      it 'sets correct :move_learn_method value' do
         expect(ENDPOINTS[:move_learn_method]).to eq('move-learn-method/')
       end
 
@@ -76,8 +80,20 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :descriptions value' do
+        expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
+      end
+
+      it 'sets correct :game_indices value' do
+        expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GameIndex)
+      end
+
       it 'sets correct :language value' do
         expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
+      end
+
+      it 'sets correct :language value' do
+        expect(ENDPOINT_OBJECTS[:location]).to eq(PokeApi::Location)
       end
 
       it 'sets correct :move_learn_method value' do
