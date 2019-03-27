@@ -3,9 +3,9 @@ module PokeApi
   class MoveLearnMethod < NamedApiResource
     attr_reader :id,
                 :name,
-                :order,
-                :url,
-                :versions
+                :names,
+                :descriptions,
+                :version_groups
 
     def initialize(data)
       assign_data(data)

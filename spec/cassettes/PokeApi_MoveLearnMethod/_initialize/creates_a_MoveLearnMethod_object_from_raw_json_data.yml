@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/move-learn-method/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Mar 2019 03:36:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '511'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db422d83d0b69cd31fcb5028f754a85311553657795; expires=Thu, 26-Mar-20
+        03:36:35 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"849-dq+Ym740kR6jqKMSoAboYFEgjJA"
+      Function-Execution-Id:
+      - ks4t0f5rnw8k
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 01cae0e1e901956a17ad0f06690b5d3d;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17531-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1553657795.384031,VS0,VE230
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4bde522508ac22fa-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkZXNjcmlwdGlvbnMiOlt7ImRlc2NyaXB0aW9uIjoiTGVhcm5lZCB3aGVuIGEgUG9rw6ltb24gcmVhY2hlcyBhIGNlcnRhaW4gbGV2ZWwuIiwibGFuZ3VhZ2UiOnsibmFtZSI6ImVuIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS85LyJ9fSx7ImRlc2NyaXB0aW9uIjoiU2UgYXByZW5kZSBjdWFuZG8gdW4gcG9rZW1vbiBhbGNhbnphIHVuIGNpZXJ0byBuaXZlbC4iLCJsYW5ndWFnZSI6eyJuYW1lIjoiZXMiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzcvIn19LHsiZGVzY3JpcHRpb24iOiJXaXJkIGdlbGVybnQsIHdlbm4gZWluIFBva8OpbW9uIGVpbiBiZXN0aW1tdGVzIExldmVsIGVycmVpY2h0LiIsImxhbmd1YWdlIjp7Im5hbWUiOiJkZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvNi8ifX1dLCJpZCI6MSwibmFtZSI6ImxldmVsLXVwIiwibmFtZXMiOlt7Imxhbmd1YWdlIjp7Im5hbWUiOiJkZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvNi8ifSwibmFtZSI6IkxldmVsIHVwIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiZXMiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzcvIn0sIm5hbWUiOiJOaXZlbCJ9LHsibGFuZ3VhZ2UiOnsibmFtZSI6ImVuIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS85LyJ9LCJuYW1lIjoiTGV2ZWwgdXAifV0sInZlcnNpb25fZ3JvdXBzIjpbeyJuYW1lIjoicmVkLWJsdWUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3ZlcnNpb24tZ3JvdXAvMS8ifSx7Im5hbWUiOiJ5ZWxsb3ciLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3ZlcnNpb24tZ3JvdXAvMi8ifSx7Im5hbWUiOiJnb2xkLXNpbHZlciIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC8zLyJ9LHsibmFtZSI6ImNyeXN0YWwiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3ZlcnNpb24tZ3JvdXAvNC8ifSx7Im5hbWUiOiJydWJ5LXNhcHBoaXJlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi92ZXJzaW9uLWdyb3VwLzUvIn0seyJuYW1lIjoiZW1lcmFsZCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC82LyJ9LHsibmFtZSI6ImZpcmVyZWQtbGVhZmdyZWVuIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi92ZXJzaW9uLWdyb3VwLzcvIn0seyJuYW1lIjoiZGlhbW9uZC1wZWFybCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC84LyJ9LHsibmFtZSI6InBsYXRpbnVtIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi92ZXJzaW9uLWdyb3VwLzkvIn0seyJuYW1lIjoiaGVhcnRnb2xkLXNvdWxzaWx2ZXIiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3ZlcnNpb24tZ3JvdXAvMTAvIn0seyJuYW1lIjoiYmxhY2std2hpdGUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3ZlcnNpb24tZ3JvdXAvMTEvIn0seyJuYW1lIjoiY29sb3NzZXVtIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi92ZXJzaW9uLWdyb3VwLzEyLyJ9LHsibmFtZSI6InhkIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi92ZXJzaW9uLWdyb3VwLzEzLyJ9LHsibmFtZSI6ImJsYWNrLTItd2hpdGUtMiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC8xNC8ifSx7Im5hbWUiOiJ4LXkiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3ZlcnNpb24tZ3JvdXAvMTUvIn0seyJuYW1lIjoib21lZ2EtcnVieS1hbHBoYS1zYXBwaGlyZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC8xNi8ifSx7Im5hbWUiOiJzdW4tbW9vbiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC8xNy8ifSx7Im5hbWUiOiJ1bHRyYS1zdW4tdWx0cmEtbW9vbiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvdmVyc2lvbi1ncm91cC8xOC8ifV19
+    http_version: 
+  recorded_at: Wed, 27 Mar 2019 03:36:35 GMT
+recorded_with: VCR 4.0.0

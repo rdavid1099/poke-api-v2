@@ -8,6 +8,7 @@ ENDPOINTS = {
   version_group: 'version-group/'
 }.freeze
 ENDPOINT_OBJECTS = {
+  descriptions: PokeApi::Common::Description,
   language: PokeApi::Utility::Language,
   move_learn_method: PokeApi::MoveLearnMethod,
   names: PokeApi::Common::Name,
