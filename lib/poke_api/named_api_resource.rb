@@ -8,12 +8,6 @@ module PokeApi
       assign_data(data)
     end
 
-    def sanitize_names_list(raw_names)
-      return unless raw_names.class == Array
-
-      raw_names.map { |raw_name| Common::Name.new(raw_name) }
-    end
-
     def assign_data(data)
       data.keys.each do |key|
         if (klass = ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[key.singularize])
