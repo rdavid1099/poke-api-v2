@@ -11,6 +11,7 @@ ENDPOINTS = {
 }.freeze
 ENDPOINT_OBJECTS = {
   descriptions: PokeApi::Common::Description,
+  encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
   game_indices: PokeApi::Common::GameIndex,
   language: PokeApi::Utility::Language,
   location_area: PokeApi::LocationArea,
