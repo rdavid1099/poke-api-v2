@@ -19,7 +19,9 @@ ENDPOINT_OBJECTS = {
   move_learn_method: PokeApi::MoveLearnMethod,
   names: PokeApi::Common::Name,
   pokedex: PokeApi::Pokedex,
+  pokemon_encounter: PokeApi::LocationArea::PokemonEncounter,
   pokemon_entries: PokeApi::Pokedex::PokemonEntry,
+  pokemon: PokeApi::Pokemon,
   region: PokeApi::Region,
   version: PokeApi::Version,
   version_group: PokeApi::VersionGroup

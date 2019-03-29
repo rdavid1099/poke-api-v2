@@ -13,7 +13,7 @@ RSpec.describe PokeApi::LocationArea, :vcr do
       expect(location_area.location.class).to eq(PokeApi::Location)
       expect(location_area.name).to eq('canalave-city-area')
       expect(location_area.names.first.class).to eq(PokeApi::Common::Name)
-      expect(location_area.pokemon_encounters.first.class).to eq(PokeApi::Common::PokemonEncounter)
+      expect(location_area.pokemon_encounters.first.class).to eq(PokeApi::LocationArea::PokemonEncounter)
     end
   end
 end
