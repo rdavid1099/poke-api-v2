@@ -1,6 +1,6 @@
 module PokeApi
   class LocationArea
-    # Pokdex object handling all data fetched from /pokedex
+    # EncounterMethodRate object handling encounter_method_rate data fetched from /location-area
     class EncounterMethodRate < NamedApiResource
       attr_reader :encounter_method,
                   :version_details

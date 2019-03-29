@@ -1,6 +1,6 @@
 module PokeApi
   class LocationArea
-    # Pokdex object handling all data fetched from /pokedex
+    # PokemonEncounter object handling pokemon_encounters data fetched from /location-area
     class PokemonEncounter < NamedApiResource
       attr_reader :pokemon,
                   :version_details
