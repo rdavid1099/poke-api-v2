@@ -50,7 +50,11 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
-      it 'sets correct :move_learn_method value' do
+      it 'sets correct :location_area value' do
+        expect(ENDPOINTS[:location_area]).to eq('location-area/')
+      end
+
+      it 'sets correct :location value' do
         expect(ENDPOINTS[:location]).to eq('location/')
       end
 
@@ -84,6 +88,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
       end
 
+      it 'sets correct :encounter_method_rate value' do
+        expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
+      end
+
       it 'sets correct :game_index value' do
         expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GameIndex)
       end
@@ -92,7 +100,11 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
       end
 
-      it 'sets correct :language value' do
+      it 'sets correct :location_area value' do
+        expect(ENDPOINT_OBJECTS[:location_area]).to eq(PokeApi::LocationArea)
+      end
+
+      it 'sets correct :location value' do
         expect(ENDPOINT_OBJECTS[:location]).to eq(PokeApi::Location)
       end
 
@@ -108,8 +120,16 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:pokedex]).to eq(PokeApi::Pokedex)
       end
 
+      it 'sets correct :pokemon_encounter value' do
+        expect(ENDPOINT_OBJECTS[:pokemon_encounter]).to eq(PokeApi::LocationArea::PokemonEncounter)
+      end
+
       it 'sets correct :pokemon_entries value' do
         expect(ENDPOINT_OBJECTS[:pokemon_entries]).to eq(PokeApi::Pokedex::PokemonEntry)
+      end
+
+      it 'sets correct :pokemon value' do
+        expect(ENDPOINT_OBJECTS[:pokemon]).to eq(PokeApi::Pokemon)
       end
 
       it 'sets correct :region value' do
@@ -118,6 +138,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :version value' do
         expect(ENDPOINT_OBJECTS[:version]).to eq(PokeApi::Version)
+      end
+
+      it 'sets correct :version_details value' do
+        expect(ENDPOINT_OBJECTS[:version_details]).to eq(PokeApi::Common::VersionEncounterDetail)
       end
 
       it 'sets correct :version_group value' do
