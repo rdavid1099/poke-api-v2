@@ -1,6 +1,6 @@
 RSpec.describe PokeApi::Common::VersionEncounterDetail do
   describe '#initialize' do
-    it 'creates a basic PokemonEncounters object from raw json data' do
+    it 'creates a basic VersionEncounterDetail object from raw json data' do
       raw_data = {
         version: {
           name: 'diamond',
@@ -22,7 +22,7 @@ RSpec.describe PokeApi::Common::VersionEncounterDetail do
 
       expect(ved.class).to eq(PokeApi::Common::VersionEncounterDetail)
       expect(ved.version.class).to eq(PokeApi::Version)
-      # expect(ved.encounter_details.first.class).to eq(PokeApi::Encounter)
+      expect(ved.encounter_details.first.class).to eq(PokeApi::Common::Encounter)
     end
   end
 end

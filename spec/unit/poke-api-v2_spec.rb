@@ -88,6 +88,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
       end
 
+      it 'sets correct :encounter_details value' do
+        expect(ENDPOINT_OBJECTS[:encounter_details]).to eq(PokeApi::Common::Encounter)
+      end
+
       it 'sets correct :encounter_method_rate value' do
         expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
       end
