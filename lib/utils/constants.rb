@@ -24,6 +24,7 @@ ENDPOINT_OBJECTS = {
   pokemon: PokeApi::Pokemon,
   region: PokeApi::Region,
   version: PokeApi::Version,
+  version_details: PokeApi::Common::VersionEncounterDetail,
   version_group: PokeApi::VersionGroup
 }.freeze
 PATH = File.dirname(__FILE__)
