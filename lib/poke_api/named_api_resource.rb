@@ -8,6 +8,8 @@ module PokeApi
       assign_data(data)
     end
 
+    private
+
     def assign_data(data)
       data.keys.each do |key|
         if (klass = ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[key.singularize])

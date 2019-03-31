@@ -8,7 +8,7 @@ RSpec.describe PokeApi::Region, :vcr do
 
       expect(region.class).to eq(PokeApi::Region)
       expect(region.id).to eq(1)
-      # expect(region.location.name).to eq('celdon-city')
+      expect(region.locations.first.class).to eq(PokeApi::Location)
       expect(region.name).to eq('kanto')
       expect(region.names.first.class).to eq(PokeApi::Common::Name)
       # expect(region.main_generation.name).to eq('generation-i')

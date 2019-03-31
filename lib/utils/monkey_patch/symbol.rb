@@ -1,6 +1,7 @@
 # Monkey patch Symbol class for specific key matching methods
 class Symbol
   SPECIAL_SIGNULAR = {
+    areas: :location_area,
     pokedexes: :pokedex
   }.freeze
 
