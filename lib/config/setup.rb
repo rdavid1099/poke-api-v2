@@ -3,10 +3,12 @@ require 'json'
 
 path = __dir__
 
+require "#{path}/../utils/assignment_helpers"
 require "#{path}/../poke_api/named_api_resource"
 
 require "#{path}/../poke_api/location_area"
 require "#{path}/../poke_api/location_area/encounter_method_rate"
+require "#{path}/../poke_api/location_area/encounter_method_rate/encounter_version_detail"
 require "#{path}/../poke_api/location_area/pokemon_encounter"
 require "#{path}/../poke_api/location"
 require "#{path}/../poke_api/move_learn_method"

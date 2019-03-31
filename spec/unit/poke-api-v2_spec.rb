@@ -144,10 +144,6 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:version]).to eq(PokeApi::Version)
       end
 
-      it 'sets correct :version_details value' do
-        expect(ENDPOINT_OBJECTS[:version_details]).to eq(PokeApi::Common::VersionEncounterDetail)
-      end
-
       it 'sets correct :version_group value' do
         expect(ENDPOINT_OBJECTS[:version_group]).to eq(PokeApi::VersionGroup)
       end
