@@ -1,6 +1,8 @@
 module PokeApi
   # Base class with shared methods for all Named API Resources
   class NamedApiResource
+    attr_reader :id, :name, :url
+
     def get
       return if id
 
