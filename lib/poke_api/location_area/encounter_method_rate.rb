@@ -1,7 +1,7 @@
 module PokeApi
   class LocationArea
     # EncounterMethodRate object handling encounter_method_rate data fetched from /location-area
-    class EncounterMethodRate < NamedApiResource
+    class EncounterMethodRate
       include AssignmentHelpers
 
       attr_reader :encounter_method,

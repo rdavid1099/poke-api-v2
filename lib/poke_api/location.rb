@@ -1,13 +1,10 @@
 module PokeApi
   # Location object handling all data fetched from /location
   class Location < NamedApiResource
-    attr_reader :id,
-                :areas,
-                :name,
+    attr_reader :areas,
                 :names,
                 :region,
-                :game_indices,
-                :url
+                :game_indices
 
     def initialize(data)
       assign_data(data)

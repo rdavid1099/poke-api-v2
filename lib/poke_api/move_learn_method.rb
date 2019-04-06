@@ -1,9 +1,7 @@
 module PokeApi
   # MoveLearnMethod object handling all data fetched from /move-learn-method
   class MoveLearnMethod < NamedApiResource
-    attr_reader :id,
-                :name,
-                :names,
+    attr_reader :names,
                 :descriptions,
                 :version_groups
 
