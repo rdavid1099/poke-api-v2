@@ -50,6 +50,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :encounter_method value' do
+        expect(ENDPOINTS[:encounter_method]).to eq('encounter-method/')
+      end
+
       it 'sets correct :location_area value' do
         expect(ENDPOINTS[:location_area]).to eq('location-area/')
       end
@@ -90,6 +94,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :encounter_details value' do
         expect(ENDPOINT_OBJECTS[:encounter_details]).to eq(PokeApi::Common::Encounter)
+      end
+
+      it 'sets correct :encounter_method value' do
+        expect(ENDPOINT_OBJECTS[:encounter_method]).to eq(PokeApi::EncounterMethod)
       end
 
       it 'sets correct :encounter_method_rate value' do
