@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "poke-api-v2"
-require "pry"
+require 'bundler/setup'
+require 'poke-api-v2'
+require 'pry'
 
 Pry.start

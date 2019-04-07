@@ -8,7 +8,7 @@ module PokeApi
                   :version_details
 
       def initialize(data)
-        @encounter_method = data[:encounter_method]
+        @encounter_method = PokeApi::EncounterMethod.new(data[:encounter_method])
         @version_details  = assign_list(
           data: data[:version_details],
           klass: EncounterVersionDetail

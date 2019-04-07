@@ -12,7 +12,7 @@ module PokeApi
         @chance = data[:chance]
         # @condition_values = PokeApi::EncounterConditionValue.new(data[:condition_values])
         @max_level = data[:max_level]
-        # @method = PokeApi::EncounterMethod.new(data[:method])
+        @method = PokeApi::EncounterMethod.new(data[:method])
         @min_level = data[:min_level]
       end
     end
