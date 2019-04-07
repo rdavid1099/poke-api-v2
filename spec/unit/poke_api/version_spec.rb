@@ -1,6 +1,6 @@
-include ApiHelperMethods
-
 RSpec.describe PokeApi::Version, :vcr do
+  include ApiHelperMethods
+
   describe '#initialize' do
     it 'creates a Version object from raw json data' do
       raw_data = make_http_request(:version, 1)

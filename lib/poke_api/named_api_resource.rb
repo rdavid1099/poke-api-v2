@@ -13,7 +13,7 @@ module PokeApi
     private
 
     def assign_data(data)
-      data.keys.each do |key|
+      data.each_key do |key|
         if (klass = ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[key.singularize])
           assign_object(klass, data[key], key)
         else
