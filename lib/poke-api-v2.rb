@@ -1,4 +1,4 @@
-require_relative './config/setup'
+require_relative './config/setup' # rubocop:disable Naming/FileName
 
 # Main module for gem operation
 module PokeApi
