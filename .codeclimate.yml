@@ -4,5 +4,5 @@ plugins:
   rubocop:
     enabled: true
     channel: rubocop-0-65
- reek:
+  reek:
     enabled: true
