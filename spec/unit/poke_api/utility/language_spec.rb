@@ -1,5 +1,3 @@
-include ApiHelperMethods
-
 RSpec.describe PokeApi::Utility::Language, :vcr do
   describe '#initialize' do
     it 'creates a basic Language object from raw json data' do

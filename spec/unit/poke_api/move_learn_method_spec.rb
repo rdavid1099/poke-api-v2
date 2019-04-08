@@ -1,9 +1,7 @@
-include ApiHelperMethods
-
 RSpec.describe PokeApi::MoveLearnMethod, :vcr do
   describe '#initialize' do
     it 'creates a MoveLearnMethod object from raw json data' do
-      raw_data = make_http_request(:move_learn_method, 1)
+      raw_data = Fetcher.call(:move_learn_method, 1)
       move_learn_method = PokeApi::MoveLearnMethod.new(raw_data)
 
       expect(move_learn_method.class).to eq(PokeApi::MoveLearnMethod)

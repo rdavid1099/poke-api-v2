@@ -1,9 +1,7 @@
 RSpec.describe PokeApi::EncounterMethod, :vcr do
-  include ApiHelperMethods
-
   describe '#initialize' do
     it 'creates a EncounterMethod object from raw json data' do
-      raw_data = make_http_request(:encounter_method, 1)
+      raw_data = Fetcher.call(:encounter_method, 1)
       em = PokeApi::EncounterMethod.new(raw_data)
 
       expect(em.class).to eq(PokeApi::EncounterMethod)
