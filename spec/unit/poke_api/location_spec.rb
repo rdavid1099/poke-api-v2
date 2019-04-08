@@ -1,9 +1,7 @@
-include ApiHelperMethods
-
 RSpec.describe PokeApi::Location, :vcr do
   describe '#initialize' do
     it 'creates a Location object from raw json data' do
-      raw_data = make_http_request(:location, 1)
+      raw_data = Fetcher.call(:location, 1)
       location = PokeApi::Location.new(raw_data)
 
       expect(location.class).to eq(PokeApi::Location)

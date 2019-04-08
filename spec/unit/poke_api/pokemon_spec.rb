@@ -1,9 +1,7 @@
 RSpec.describe PokeApi::Pokemon, :vcr do
-  include ApiHelperMethods
-
   describe '#initialize' do
     it 'creates a Pokemon object from raw json data' do
-      raw_data = make_http_request(:pokemon, 6)
+      raw_data = Fetcher.call(:pokemon, 6)
       pokemon = PokeApi::Pokemon.new(raw_data)
 
       expect(pokemon.class).to eq(PokeApi::Pokemon)

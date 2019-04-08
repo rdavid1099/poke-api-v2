@@ -1,9 +1,7 @@
-include ApiHelperMethods
-
 RSpec.describe PokeApi::Region, :vcr do
   describe '#initialize' do
     it 'creates a Region object from raw json data' do
-      raw_data = make_http_request(:region, 1)
+      raw_data = Fetcher.call(:region, 1)
       region = PokeApi::Region.new(raw_data)
 
       expect(region.class).to eq(PokeApi::Region)

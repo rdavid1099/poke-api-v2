@@ -1,4 +1,4 @@
-require_relative './config/setup'
+require_relative './config/setup' # rubocop:disable Naming/FileName
 
 # Main module for gem operation
 module PokeApi
@@ -10,10 +10,8 @@ module PokeApi
     results.length == 1 ? results.first : results
   end
 
-  def self.pokedex(id: nil, name: nil)
-    ErrorHandling.raise_too_many_args_error if id && name
-    query = id || name || (rand(POKEMON_COUNT) + 1)
-    raw_data = Fetcher.call(:pokemon, query)
-    PokeApi::Pokemon.new(raw_data)
+  def self.pokedex(query = nil)
+    query ||= (rand(POKEMON_COUNT) + 1)
+    get(pokemon: query)
   end
 end

@@ -1,6 +1,6 @@
 # Module housing simple assignment methods/ patterns
 module AssignmentHelpers
-  private
+  module_function
 
   def assign_list(data:, klass:)
     return unless data
