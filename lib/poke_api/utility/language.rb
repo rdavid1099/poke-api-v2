@@ -2,13 +2,10 @@ module PokeApi
   module Utility
     # Utility Language object used by several PokeApi endpoints
     class Language < NamedApiResource
-      attr_reader :id,
-                  :iso3166,
+      attr_reader :iso3166,
                   :iso639,
-                  :name,
                   :names,
-                  :official,
-                  :url
+                  :official
 
       def initialize(data)
         assign_data(data)

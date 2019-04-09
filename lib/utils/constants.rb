@@ -1,5 +1,6 @@
 BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
+  encounter_method: 'encounter-method/',
   location_area: 'location-area/',
   location: 'location/',
   move_learn_method: 'move-learn-method/',
@@ -12,6 +13,7 @@ ENDPOINTS = {
 ENDPOINT_OBJECTS = {
   descriptions: PokeApi::Common::Description,
   encounter_details: PokeApi::Common::Encounter,
+  encounter_method: PokeApi::EncounterMethod,
   encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
   game_indices: PokeApi::Common::GameIndex,
   language: PokeApi::Utility::Language,

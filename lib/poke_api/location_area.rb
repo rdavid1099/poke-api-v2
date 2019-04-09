@@ -1,14 +1,11 @@
 module PokeApi
   # LocationArea object handling all data fetched from /location-area
   class LocationArea < NamedApiResource
-    attr_reader :id,
-                :encounter_method_rates,
+    attr_reader :encounter_method_rates,
                 :game_index,
                 :location,
-                :name,
                 :names,
-                :pokemon_encounters,
-                :url
+                :pokemon_encounters
 
     def initialize(data)
       assign_data(data)

@@ -1,10 +1,7 @@
 module PokeApi
   # Version object handling all data fetched from /version
   class Version < NamedApiResource
-    attr_reader :id,
-                :name,
-                :names,
-                :url,
+    attr_reader :names,
                 :version_group
 
     def initialize(data)

@@ -19,7 +19,7 @@ RSpec.describe PokeApi::LocationArea::EncounterMethodRate do
       emr = PokeApi::LocationArea::EncounterMethodRate.new(raw_data)
 
       expect(emr.class).to eq(PokeApi::LocationArea::EncounterMethodRate)
-      # expect(emr.encounter_method.class).to eq(PokeApi::EncounterMethod)
+      expect(emr.encounter_method.class).to eq(PokeApi::EncounterMethod)
       expect(emr.version_details.first.class).to eq(PokeApi::LocationArea::EncounterMethodRate::EncounterVersionDetail)
     end
   end

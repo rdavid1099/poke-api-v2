@@ -7,22 +7,17 @@ RSpec.describe PokeApi, :vcr  do
 
   describe '#pokedex' do
     it 'fetches using given id' do
-      result = PokeApi.pokedex(id: 1)
+      result = PokeApi.pokedex(1)
 
       expect(result.name).to eq('bulbasaur')
       expect(result.id).to eq(1)
     end
 
     it 'fetches using given name' do
-      result = PokeApi.pokedex(id: 'blastoise')
+      result = PokeApi.pokedex('blastoise')
 
       expect(result.name).to eq('blastoise')
       expect(result.id).to eq(9)
-    end
-
-    it 'raises an exception if both id and name are given' do
-      error_msg = 'Too many arguments given; search pokedex using either :id or :name'
-      expect{ PokeApi.pokedex(id: 1, name: 'charizard') }.to raise_error(ArgumentError, error_msg)
     end
   end
 
@@ -50,6 +45,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :encounter_method value' do
+        expect(ENDPOINTS[:encounter_method]).to eq('encounter-method/')
+      end
+
       it 'sets correct :location_area value' do
         expect(ENDPOINTS[:location_area]).to eq('location-area/')
       end
@@ -90,6 +89,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :encounter_details value' do
         expect(ENDPOINT_OBJECTS[:encounter_details]).to eq(PokeApi::Common::Encounter)
+      end
+
+      it 'sets correct :encounter_method value' do
+        expect(ENDPOINT_OBJECTS[:encounter_method]).to eq(PokeApi::EncounterMethod)
       end
 
       it 'sets correct :encounter_method_rate value' do
