@@ -9,7 +9,7 @@ RSpec.describe PokeApi::EncounterConditionValue, :vcr do
       expect(em.name).to eq('swarm-yes')
       expect(em.names.last.name).to eq('During a swarm')
       expect(em.names.last.language.name).to eq('en')
-      # expect(em.condition.class).to eq(PokeApi::EncounterCondition)
+      expect(em.condition.class).to eq(PokeApi::EncounterCondition)
     end
   end
 end
