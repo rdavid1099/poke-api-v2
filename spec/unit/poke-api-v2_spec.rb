@@ -45,6 +45,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :berry value' do
+        expect(ENDPOINTS[:berry]).to eq('berry/')
+      end
+
       it 'sets correct :encounter_condition_value value' do
         expect(ENDPOINTS[:encounter_condition_value]).to eq('encounter-condition-value/')
       end
@@ -91,6 +95,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :berry value' do
+        expect(ENDPOINT_OBJECTS[:berry]).to eq(PokeApi::Berry)
+      end
+
       it 'sets correct :condition value' do
         expect(ENDPOINT_OBJECTS[:condition]).to eq(PokeApi::EncounterCondition)
       end
