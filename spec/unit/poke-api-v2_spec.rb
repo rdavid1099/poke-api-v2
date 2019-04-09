@@ -45,6 +45,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :encounter_condition_value value' do
+        expect(ENDPOINTS[:encounter_condition_value]).to eq('encounter-condition-value/')
+      end
+
       it 'sets correct :encounter_method value' do
         expect(ENDPOINTS[:encounter_method]).to eq('encounter-method/')
       end
@@ -141,6 +145,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :region value' do
         expect(ENDPOINT_OBJECTS[:region]).to eq(PokeApi::Region)
+      end
+
+      it 'sets correct :values value' do
+        expect(ENDPOINT_OBJECTS[:values]).to eq(PokeApi::EncounterConditionValue)
       end
 
       it 'sets correct :version value' do

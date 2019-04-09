@@ -1,5 +1,6 @@
 BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
+  encounter_condition_value: 'encounter-condition-value/',
   encounter_method: 'encounter-method/',
   location_area: 'location-area/',
   location: 'location/',
@@ -26,6 +27,7 @@ ENDPOINT_OBJECTS = {
   pokemon_entries: PokeApi::Pokedex::PokemonEntry,
   pokemon: PokeApi::Pokemon,
   region: PokeApi::Region,
+  values: PokeApi::EncounterConditionValue,
   version: PokeApi::Version,
   version_group: PokeApi::VersionGroup
 }.freeze

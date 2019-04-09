@@ -31,7 +31,7 @@ RSpec.describe PokeApi::Common::Encounter do
       expect(encounter.chance).to eq(60)
       expect(encounter.min_level).to eq(20)
       expect(encounter.max_level).to eq(30)
-      # expect(encounter.condition_values.first).to eq(PokeApi::EncounterConditionValue)
+      expect(encounter.condition_values.first.class).to eq(PokeApi::EncounterConditionValue)
       expect(encounter.method.class).to eq( PokeApi::EncounterMethod)
     end
   end
