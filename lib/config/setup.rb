@@ -7,6 +7,7 @@ require "#{path}/../utils/assignment_helpers"
 require "#{path}/../poke_api/named_api_resource"
 
 require "#{path}/../poke_api/berry"
+require "#{path}/../poke_api/berry/berry_flavor_map"
 require "#{path}/../poke_api/encounter_condition_value"
 require "#{path}/../poke_api/encounter_condition"
 require "#{path}/../poke_api/encounter_method"

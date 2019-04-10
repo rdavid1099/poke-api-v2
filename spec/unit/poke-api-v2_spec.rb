@@ -119,6 +119,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
       end
 
+      it 'sets correct :flavor value' do
+        expect(ENDPOINT_OBJECTS[:flavor]).to eq(PokeApi::Berry::BerryFlavorMap)
+      end
+
       it 'sets correct :game_index value' do
         expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GameIndex)
       end

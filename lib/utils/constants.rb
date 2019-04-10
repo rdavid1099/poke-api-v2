@@ -20,6 +20,7 @@ ENDPOINT_OBJECTS = {
   encounter_details: PokeApi::Common::Encounter,
   encounter_method: PokeApi::EncounterMethod,
   encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
+  flavor: PokeApi::Berry::BerryFlavorMap,
   game_indices: PokeApi::Common::GameIndex,
   language: PokeApi::Utility::Language,
   location_area: PokeApi::LocationArea,
