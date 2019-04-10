@@ -1,5 +1,6 @@
 BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
+  berry: 'berry/',
   encounter_condition_value: 'encounter-condition-value/',
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
@@ -13,11 +14,13 @@ ENDPOINTS = {
   version_group: 'version-group/'
 }.freeze
 ENDPOINT_OBJECTS = {
+  berry: PokeApi::Berry,
   condition: PokeApi::EncounterCondition,
   descriptions: PokeApi::Common::Description,
   encounter_details: PokeApi::Common::Encounter,
   encounter_method: PokeApi::EncounterMethod,
   encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
+  flavor: PokeApi::Berry::BerryFlavorMap,
   game_indices: PokeApi::Common::GameIndex,
   language: PokeApi::Utility::Language,
   location_area: PokeApi::LocationArea,
