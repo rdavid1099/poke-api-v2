@@ -17,6 +17,7 @@ ENDPOINTS = {
 ENDPOINT_OBJECTS = {
   berry: PokeApi::Berry,
   condition: PokeApi::EncounterCondition,
+  damage_relations: PokeApi::Type::TypeRelations,
   descriptions: PokeApi::Common::Description,
   encounter_details: PokeApi::Common::Encounter,
   encounter_method: PokeApi::EncounterMethod,
