@@ -85,6 +85,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:region]).to eq('region/')
       end
 
+      it 'sets correct :type value' do
+        expect(ENDPOINTS[:type]).to eq('type/')
+      end
+
       it 'sets correct :version value' do
         expect(ENDPOINTS[:version]).to eq('version/')
       end
@@ -101,6 +105,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :condition value' do
         expect(ENDPOINT_OBJECTS[:condition]).to eq(PokeApi::EncounterCondition)
+      end
+
+      it 'sets correct :damage_relations value' do
+        expect(ENDPOINT_OBJECTS[:damage_relations]).to eq(PokeApi::Type::TypeRelations)
       end
 
       it 'sets correct :descriptions value' do
@@ -145,6 +153,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :names value' do
         expect(ENDPOINT_OBJECTS[:names]).to eq(PokeApi::Common::Name)
+      end
+
+      it 'sets correct :natural_gift_type value' do
+        expect(ENDPOINT_OBJECTS[:natural_gift_type]).to eq(PokeApi::Type)
       end
 
       it 'sets correct :pokedex value' do
