@@ -10,6 +10,7 @@ ENDPOINTS = {
   pokedex: 'pokedex/',
   pokemon: 'pokemon/',
   region: 'region/',
+  type: 'type/',
   version: 'version/',
   version_group: 'version-group/'
 }.freeze
@@ -27,6 +28,7 @@ ENDPOINT_OBJECTS = {
   location: PokeApi::Location,
   move_learn_method: PokeApi::MoveLearnMethod,
   names: PokeApi::Common::Name,
+  natural_gift_type: PokeApi::Type,
   pokedex: PokeApi::Pokedex,
   pokemon_encounter: PokeApi::LocationArea::PokemonEncounter,
   pokemon_entries: PokeApi::Pokedex::PokemonEntry,
