@@ -10,7 +10,7 @@ RSpec.describe PokeApi::Location, :vcr do
       expect(location.name).to eq('canalave-city')
       expect(location.names.first.class).to eq(PokeApi::Common::Name)
       expect(location.region.name).to eq('sinnoh')
-      expect(location.game_indices.first.class).to eq(PokeApi::Common::GameIndex)
+      expect(location.game_indices.first.class).to eq(PokeApi::Common::GenerationGameIndex)
     end
   end
 end

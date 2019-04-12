@@ -9,4 +9,8 @@ module AssignmentHelpers
       klass.new(raw)
     end
   end
+
+  def endpoint_assignment(key:, custom_endpoint_object: {})
+    custom_endpoint_object[key] || ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[key.singularize]
+  end
 end
