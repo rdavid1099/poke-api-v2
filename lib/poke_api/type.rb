@@ -10,7 +10,7 @@ module PokeApi
                 :move
 
     def initialize(data)
-      assign_data(data)
+      assign_data(data, custom_endpoint_object: { pokemon: TypePokemon })
     end
   end
 end
