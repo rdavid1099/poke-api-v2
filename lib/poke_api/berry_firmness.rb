@@ -1,5 +1,5 @@
 module PokeApi
-  # Berry object handling all data fetched from /berry
+  # BerryFirmness object handling all data fetched from /berry-firmness
   class BerryFirmness < NamedApiResource
     attr_reader :berries,
                 :names

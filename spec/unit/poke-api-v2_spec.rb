@@ -45,6 +45,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :berry_firmness value' do
+        expect(ENDPOINTS[:berry_firmness]).to eq('berry-firmness/')
+      end
+
       it 'sets correct :berry value' do
         expect(ENDPOINTS[:berry]).to eq('berry/')
       end
@@ -125,6 +129,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :encounter_method_rate value' do
         expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
+      end
+
+      it 'sets correct :firmness value' do
+        expect(ENDPOINT_OBJECTS[:firmness]).to eq(PokeApi::BerryFirmness)
       end
 
       it 'sets correct :flavor value' do
