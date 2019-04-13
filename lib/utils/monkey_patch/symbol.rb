@@ -2,6 +2,7 @@
 class Symbol
   SPECIAL_SIGNULAR = {
     areas: :location_area,
+    berries: :berry,
     pokedexes: :pokedex
   }.freeze
 

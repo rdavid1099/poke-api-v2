@@ -1,6 +1,7 @@
 BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
   berry: 'berry/',
+  berry_firmness: 'berry-firmness/',
   encounter_condition_value: 'encounter-condition-value/',
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
@@ -22,6 +23,7 @@ ENDPOINT_OBJECTS = {
   encounter_details: PokeApi::Common::Encounter,
   encounter_method: PokeApi::EncounterMethod,
   encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
+  firmness: PokeApi::BerryFirmness,
   flavor: PokeApi::Berry::BerryFlavorMap,
   game_indices: PokeApi::Common::GenerationGameIndex,
   language: PokeApi::Utility::Language,
