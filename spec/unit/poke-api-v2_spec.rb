@@ -123,6 +123,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
       end
 
+      it 'sets correct :effect_entries value' do
+        expect(ENDPOINT_OBJECTS[:effect_entries]).to eq(PokeApi::Common::VerboseEffect)
+      end
+
       it 'sets correct :encounter_details value' do
         expect(ENDPOINT_OBJECTS[:encounter_details]).to eq(PokeApi::Common::Encounter)
       end

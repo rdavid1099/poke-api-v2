@@ -12,7 +12,8 @@ module PokeApi
                 :names,
                 :sprites,
                 :held_by_pokemon,
-                :baby_trigger_for
+                :baby_trigger_for,
+                :machines
 
     def initialize(data)
       assign_data(data)
