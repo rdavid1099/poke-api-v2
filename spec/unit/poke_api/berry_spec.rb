@@ -15,7 +15,7 @@ RSpec.describe PokeApi::Berry, :vcr do
       expect(berry.soil_dryness).to eq(15)
       expect(berry.firmness.class).to eq(PokeApi::BerryFirmness)
       expect(berry.flavors.first.class).to eq(PokeApi::Berry::BerryFlavorMap)
-      # expect(berry.item.class).to eq(PokeApi::Item)
+      expect(berry.item.class).to eq(PokeApi::Item)
       expect(berry.natural_gift_type.class).to eq(PokeApi::Type)
     end
   end

@@ -65,6 +65,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:encounter_method]).to eq('encounter-method/')
       end
 
+      it 'sets correct :item value' do
+        expect(ENDPOINTS[:item]).to eq('item/')
+      end
+
       it 'sets correct :location_area value' do
         expect(ENDPOINTS[:location_area]).to eq('location-area/')
       end
@@ -119,6 +123,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
       end
 
+      it 'sets correct :effect_entries value' do
+        expect(ENDPOINT_OBJECTS[:effect_entries]).to eq(PokeApi::Common::VerboseEffect)
+      end
+
       it 'sets correct :encounter_details value' do
         expect(ENDPOINT_OBJECTS[:encounter_details]).to eq(PokeApi::Common::Encounter)
       end
@@ -129,6 +137,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :encounter_method_rate value' do
         expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
+      end
+
+      it 'sets correct :item value' do
+        expect(ENDPOINT_OBJECTS[:item]).to eq(PokeApi::Item)
       end
 
       it 'sets correct :firmness value' do
@@ -143,6 +155,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GenerationGameIndex)
       end
 
+      it 'sets correct :held_by_pokemon value' do
+        expect(ENDPOINT_OBJECTS[:held_by_pokemon]).to eq(PokeApi::Item::ItemHolderPokemon)
+      end
+
       it 'sets correct :language value' do
         expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
       end
@@ -153,6 +169,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :location value' do
         expect(ENDPOINT_OBJECTS[:location]).to eq(PokeApi::Location)
+      end
+
+      it 'sets correct :machines value' do
+        expect(ENDPOINT_OBJECTS[:machines]).to eq(PokeApi::Common::MachineVersionDetail)
       end
 
       it 'sets correct :move_learn_method value' do
