@@ -7,6 +7,7 @@ ENDPOINTS = {
   encounter_method: 'encounter-method/',
   item: 'item/',
   item_attribute: 'item-attribute/',
+  item_category: 'item-category/',
   item_fling_effect: 'item-fling-effect/',
   location_area: 'location-area/',
   location: 'location/',
