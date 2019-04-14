@@ -13,7 +13,7 @@ RSpec.describe PokeApi::Common::MachineVersionDetail do
       mvd = PokeApi::Common::MachineVersionDetail.new(raw_data)
 
       expect(mvd.class).to eq(PokeApi::Common::MachineVersionDetail)
-      # expect(mvd.machine.class).to eq(PokeApi::Machine)
+      expect(mvd.machine.class).to eq(PokeApi::Machine)
       expect(mvd.version_group.class).to eq(PokeApi::VersionGroup)
     end
   end

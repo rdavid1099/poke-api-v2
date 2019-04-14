@@ -8,6 +8,7 @@ ENDPOINTS = {
   item: 'item/',
   location_area: 'location-area/',
   location: 'location/',
+  machine: 'machine/',
   move_learn_method: 'move-learn-method/',
   pokedex: 'pokedex/',
   pokemon: 'pokemon/',

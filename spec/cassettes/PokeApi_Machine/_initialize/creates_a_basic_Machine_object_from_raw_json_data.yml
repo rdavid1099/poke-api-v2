@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/machine/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Apr 2019 19:08:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d97479326137e3856fa7107260c3c31121555268881; expires=Mon, 13-Apr-20
+        19:08:01 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"e9-frFgXAvehNw8qam4PfS286AJ1y0"
+      Function-Execution-Id:
+      - xu4u5z8d52o1
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 0ec66b4b8a66a1d61fd8bef6ec132b25;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8630-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1555268881.438144,VS0,VE552
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c77f74cc9a59961-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"item":{"name":"tm01","url":"https://pokeapi.co/api/v2/item/305/"},"move":{"name":"mega-punch","url":"https://pokeapi.co/api/v2/move/5/"},"version_group":{"name":"red-blue","url":"https://pokeapi.co/api/v2/version-group/1/"}}'
+    http_version: 
+  recorded_at: Sun, 14 Apr 2019 19:08:02 GMT
+recorded_with: VCR 4.0.0
