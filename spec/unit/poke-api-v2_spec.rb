@@ -73,6 +73,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:item_attribute]).to eq('item-attribute/')
       end
 
+      it 'sets correct :item_category value' do
+        expect(ENDPOINTS[:item_category]).to eq('item-category/')
+      end
+
       it 'sets correct :item_fling_effect value' do
         expect(ENDPOINTS[:item_fling_effect]).to eq('item-fling-effect/')
       end
