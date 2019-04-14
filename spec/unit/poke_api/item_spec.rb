@@ -13,7 +13,7 @@ RSpec.describe PokeApi::Item, :vcr do
       expect(machine.cost).to eq(0)
       expect(lucky_egg.attributes.first.class).to eq(PokeApi::ItemAttribute)
       expect(machine.attributes.first.class).to eq(NilClass)
-      # expect(machine.category).to eq(PokeApi::ItemCategory)
+      expect(machine.category.class).to eq(PokeApi::ItemCategory)
       expect(machine.effect_entries.first.class).to eq(PokeApi::Common::VerboseEffect)
       expect(machine.flavor_text_entries.first.class).to eq(PokeApi::Common::VersionGroupFlavorText)
       expect(machine.game_indices.first.class).to eq(PokeApi::Common::GenerationGameIndex)
