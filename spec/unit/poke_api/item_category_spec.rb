@@ -8,7 +8,7 @@ RSpec.describe PokeApi::ItemCategory, :vcr do
       expect(category.name).to eq('stat-boosts')
       expect(category.items.first.class).to eq(PokeApi::Item)
       expect(category.names.first.class).to eq(PokeApi::Common::Name)
-      # expect(category.pocket.class).to eq(PokeApi::ItemPocket)
+      expect(category.pocket.class).to eq(PokeApi::ItemPocket)
     end
   end
 end
