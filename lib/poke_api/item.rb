@@ -16,7 +16,12 @@ module PokeApi
                 :machines
 
     def initialize(data)
-      assign_data(data)
+      assign_data(
+        data,
+        custom_endpoint_object: {
+          flavor_text_entries: Common::VersionGroupFlavorText
+        }
+      )
     end
   end
 end
