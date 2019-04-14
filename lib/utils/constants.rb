@@ -29,6 +29,7 @@ ENDPOINT_OBJECTS = {
   firmness: PokeApi::BerryFirmness,
   flavor: PokeApi::Berry::BerryFlavorMap,
   game_indices: PokeApi::Common::GenerationGameIndex,
+  held_by_pokemon: PokeApi::Item::ItemHolderPokemon,
   language: PokeApi::Utility::Language,
   location_area: PokeApi::LocationArea,
   location: PokeApi::Location,

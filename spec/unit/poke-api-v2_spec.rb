@@ -155,6 +155,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GenerationGameIndex)
       end
 
+      it 'sets correct :held_by_pokemon value' do
+        expect(ENDPOINT_OBJECTS[:held_by_pokemon]).to eq(PokeApi::Item::ItemHolderPokemon)
+      end
+
       it 'sets correct :language value' do
         expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
       end

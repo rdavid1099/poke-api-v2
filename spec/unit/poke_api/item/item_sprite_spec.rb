@@ -1,6 +1,6 @@
 RSpec.describe PokeApi::Item::ItemSprites do
   describe '#initialize' do
-    it 'creates a basic GenerationGameIndex object from raw json data' do
+    it 'creates a basic ItemSprites object from raw json data' do
       raw_data = {
         default: 'http://pokeapi.co/media/sprites/items/master-ball.png'
       }

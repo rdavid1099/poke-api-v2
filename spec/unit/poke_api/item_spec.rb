@@ -3,8 +3,10 @@ RSpec.describe PokeApi::Item, :vcr do
     it 'creates an Item object from raw json data' do
       raw_machine_data = Fetcher.call(:item, 397)
       raw_ball_data = Fetcher.call(:item, 1)
+      raw_egg_data = Fetcher.call(:item, 208)
       machine = PokeApi::Item.new(raw_machine_data)
       master_ball = PokeApi::Item.new(raw_ball_data)
+      lucky_egg = PokeApi::Item.new(raw_egg_data)
 
       expect(machine.id).to eq(397)
       expect(machine.name).to eq("hm01")
@@ -16,7 +18,7 @@ RSpec.describe PokeApi::Item, :vcr do
       expect(machine.game_indices.first.class).to eq(PokeApi::Common::GenerationGameIndex)
       expect(machine.names.first.class).to eq(PokeApi::Common::Name)
       expect(machine.sprites.class).to eq(PokeApi::Item::ItemSprites)
-      expect(machine.held_by_pokemon.first.class).to eq(PokeApi::Item::ItemHolderPokemon)
+      expect(lucky_egg.held_by_pokemon.first.class).to eq(PokeApi::Item::ItemHolderPokemon)
       # expect(machine.baby_trigger_for.class).to eq(PokeApi::EvolutionChain)
       expect(machine.machines.first.class).to eq(PokeApi::Common::MachineVersionDetail)
       expect(master_ball.fling_power).to eq(10)
