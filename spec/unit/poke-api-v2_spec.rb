@@ -69,6 +69,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:item]).to eq('item/')
       end
 
+      it 'sets correct :item_attribute value' do
+        expect(ENDPOINTS[:item_attribute]).to eq('item-attribute/')
+      end
+
       it 'sets correct :item_fling_effect value' do
         expect(ENDPOINTS[:item_fling_effect]).to eq('item-fling-effect/')
       end
@@ -115,6 +119,10 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :attributes value' do
+        expect(ENDPOINT_OBJECTS[:attributes]).to eq(PokeApi::ItemAttribute)
+      end
+
       it 'sets correct :berry value' do
         expect(ENDPOINT_OBJECTS[:berry]).to eq(PokeApi::Berry)
       end
