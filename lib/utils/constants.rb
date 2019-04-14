@@ -33,6 +33,7 @@ ENDPOINT_OBJECTS = {
   language: PokeApi::Utility::Language,
   location_area: PokeApi::LocationArea,
   location: PokeApi::Location,
+  machines: PokeApi::Common::MachineVersionDetail,
   move_learn_method: PokeApi::MoveLearnMethod,
   names: PokeApi::Common::Name,
   natural_gift_type: PokeApi::Type,

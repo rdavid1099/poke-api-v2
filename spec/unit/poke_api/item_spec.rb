@@ -2,10 +2,10 @@ RSpec.describe PokeApi::Item, :vcr do
   describe '#initialize' do
     it 'creates an Item object from raw json data' do
       raw_machine_data = Fetcher.call(:item, 397)
-      raw_ball_data = Fetcher.call(:item, 1)
+      raw_poison_data = Fetcher.call(:item, 249)
       raw_egg_data = Fetcher.call(:item, 208)
       machine = PokeApi::Item.new(raw_machine_data)
-      master_ball = PokeApi::Item.new(raw_ball_data)
+      badly_poison = PokeApi::Item.new(raw_poison_data)
       lucky_egg = PokeApi::Item.new(raw_egg_data)
 
       expect(machine.id).to eq(397)
@@ -21,8 +21,8 @@ RSpec.describe PokeApi::Item, :vcr do
       expect(lucky_egg.held_by_pokemon.first.class).to eq(PokeApi::Item::ItemHolderPokemon)
       # expect(machine.baby_trigger_for.class).to eq(PokeApi::EvolutionChain)
       expect(machine.machines.first.class).to eq(PokeApi::Common::MachineVersionDetail)
-      expect(master_ball.fling_power).to eq(10)
-      # expect(master_ball.fling_effect.class).to eq(PokeApi::ItemFlingEffect)
+      expect(lucky_egg.fling_power).to eq(30)
+      # expect(badly_poison.fling_effect.class).to eq(PokeApi::ItemFlingEffect)
     end
   end
 end
