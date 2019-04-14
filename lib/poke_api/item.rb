@@ -19,7 +19,8 @@ module PokeApi
       assign_data(
         data,
         custom_endpoint_object: {
-          flavor_text_entries: Common::VersionGroupFlavorText
+          flavor_text_entries: Common::VersionGroupFlavorText,
+          sprites: ItemSprites
         }
       )
     end
