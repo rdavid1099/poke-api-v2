@@ -19,6 +19,7 @@ module PokeApi
       assign_data(
         data,
         custom_endpoint_object: {
+          effect_entries: Common::VerboseEffect,
           flavor_text_entries: Common::VersionGroupFlavorText,
           sprites: ItemSprites
         }

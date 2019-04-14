@@ -69,6 +69,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:item]).to eq('item/')
       end
 
+      it 'sets correct :item_fling_effect value' do
+        expect(ENDPOINTS[:item_fling_effect]).to eq('item-fling-effect/')
+      end
+
       it 'sets correct :location_area value' do
         expect(ENDPOINTS[:location_area]).to eq('location-area/')
       end
@@ -128,7 +132,7 @@ RSpec.describe PokeApi, :vcr  do
       end
 
       it 'sets correct :effect_entries value' do
-        expect(ENDPOINT_OBJECTS[:effect_entries]).to eq(PokeApi::Common::VerboseEffect)
+        expect(ENDPOINT_OBJECTS[:effect_entries]).to eq(PokeApi::Common::Effect)
       end
 
       it 'sets correct :encounter_details value' do

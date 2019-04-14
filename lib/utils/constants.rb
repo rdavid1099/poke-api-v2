@@ -23,7 +23,7 @@ ENDPOINT_OBJECTS = {
   condition: PokeApi::EncounterCondition,
   damage_relations: PokeApi::Type::TypeRelations,
   descriptions: PokeApi::Common::Description,
-  effect_entries: PokeApi::Common::VerboseEffect,
+  effect_entries: PokeApi::Common::Effect,
   encounter_details: PokeApi::Common::Encounter,
   encounter_method: PokeApi::EncounterMethod,
   encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
