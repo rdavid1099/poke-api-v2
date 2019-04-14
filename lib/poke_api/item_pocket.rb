@@ -5,7 +5,7 @@ module PokeApi
                 :names
 
     def initialize(data)
-      assign_data(data)
+      assign_data(data, custom_endpoint_object: { categories: ItemCategory })
     end
   end
 end
