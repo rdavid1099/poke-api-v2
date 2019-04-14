@@ -1,5 +1,5 @@
 module PokeApi
-  # ItemFlingEffect object handling all data fetched from /machine
+  # ItemFlingEffect object handling all data fetched from /item-fling-effect
   class ItemFlingEffect < NamedApiResource
     attr_reader :effect_entries,
                 :items
