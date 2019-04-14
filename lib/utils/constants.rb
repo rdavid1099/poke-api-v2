@@ -6,6 +6,7 @@ ENDPOINTS = {
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
   item: 'item/',
+  item_fling_effect: 'item-fling-effect/',
   location_area: 'location-area/',
   location: 'location/',
   machine: 'machine/',

@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/item-fling-effect/badly-poison
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Apr 2019 19:52:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db007dbb5516e913f1eff6ce616ad3f5c1555271560; expires=Mon, 13-Apr-20
+        19:52:40 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"ea-Pm5sGotofaXpi7u8NZAAH+dfGnQ"
+      Function-Execution-Id:
+      - bqprfl89ucl8
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 847fe9052917780948949eb1a6d05d0e;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8631-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1555271560.470947,VS0,VE588
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c7838b4c9be994f-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"effect_entries":[{"effect":"Badly poisons the target.","language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"}}],"id":1,"items":[{"name":"toxic-orb","url":"https://pokeapi.co/api/v2/item/249/"}],"name":"badly-poison"}'
+    http_version: 
+  recorded_at: Sun, 14 Apr 2019 19:52:41 GMT
+recorded_with: VCR 4.0.0
