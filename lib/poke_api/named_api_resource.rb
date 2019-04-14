@@ -26,7 +26,7 @@ module PokeApi
     end
 
     def assign_object(klass, data, key)
-      return unless data && !data.empty?
+      return unless data
 
       assignment = if data.is_a? Array
                      assign_list(klass: klass, data: data)
