@@ -6,6 +6,7 @@ ENDPOINTS = {
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
   item: 'item/',
+  item_attribute: 'item-attribute/',
   item_fling_effect: 'item-fling-effect/',
   location_area: 'location-area/',
   location: 'location/',
@@ -19,6 +20,7 @@ ENDPOINTS = {
   version_group: 'version-group/'
 }.freeze
 ENDPOINT_OBJECTS = {
+  attributes: PokeApi::ItemAttribute,
   berry: PokeApi::Berry,
   condition: PokeApi::EncounterCondition,
   damage_relations: PokeApi::Type::TypeRelations,
