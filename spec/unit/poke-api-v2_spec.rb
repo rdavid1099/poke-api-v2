@@ -77,6 +77,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:location]).to eq('location/')
       end
 
+      it 'sets correct :machine value' do
+        expect(ENDPOINTS[:machine]).to eq('machine/')
+      end
+
       it 'sets correct :move_learn_method value' do
         expect(ENDPOINTS[:move_learn_method]).to eq('move-learn-method/')
       end

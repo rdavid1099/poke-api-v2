@@ -6,7 +6,7 @@ module PokeApi
                   :version_group
 
       def initialize(data)
-        # @machine = Machine.new(data[:machine])
+        @machine = Machine.new(data[:machine])
         @version_group = VersionGroup.new(data[:version_group])
       end
     end
