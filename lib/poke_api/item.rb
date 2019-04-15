@@ -16,15 +16,18 @@ module PokeApi
                 :machines
 
     def initialize(data)
-      assign_data(
-        data,
-        custom_endpoint_object: {
-          category: ItemCategory,
-          effect_entries: Common::VerboseEffect,
-          flavor_text_entries: Common::VersionGroupFlavorText,
-          sprites: ItemSprites
-        }
-      )
+      assign_data(data)
+    end
+
+    private
+
+    def custom_endpoint_object
+      {
+        category: ItemCategory,
+        effect_entries: Common::VerboseEffect,
+        flavor_text_entries: Common::VersionGroupFlavorText,
+        sprites: ItemSprites
+      }
     end
   end
 end
