@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/item-pocket/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Apr 2019 22:48:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '342'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8240135d137d7ad5934db1631ba312e11555282137; expires=Mon, 13-Apr-20
+        22:48:57 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"610-ldztG6CR2836MZy286aBZD2BnzY"
+      Function-Execution-Id:
+      - o7hovt2z2lzh
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - d38b42197704062408dc85e0863bc5c8;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17520-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1555282138.530775,VS0,VE238
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c793aef7a38791e-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"categories":[{"name":"collectibles","url":"https://pokeapi.co/api/v2/item-category/9/"},{"name":"evolution","url":"https://pokeapi.co/api/v2/item-category/10/"},{"name":"spelunking","url":"https://pokeapi.co/api/v2/item-category/11/"},{"name":"held-items","url":"https://pokeapi.co/api/v2/item-category/12/"},{"name":"choice","url":"https://pokeapi.co/api/v2/item-category/13/"},{"name":"effort-training","url":"https://pokeapi.co/api/v2/item-category/14/"},{"name":"bad-held-items","url":"https://pokeapi.co/api/v2/item-category/15/"},{"name":"training","url":"https://pokeapi.co/api/v2/item-category/16/"},{"name":"plates","url":"https://pokeapi.co/api/v2/item-category/17/"},{"name":"species-specific","url":"https://pokeapi.co/api/v2/item-category/18/"},{"name":"type-enhancement","url":"https://pokeapi.co/api/v2/item-category/19/"},{"name":"loot","url":"https://pokeapi.co/api/v2/item-category/24/"},{"name":"mulch","url":"https://pokeapi.co/api/v2/item-category/32/"},{"name":"dex-completion","url":"https://pokeapi.co/api/v2/item-category/35/"},{"name":"scarves","url":"https://pokeapi.co/api/v2/item-category/36/"},{"name":"jewels","url":"https://pokeapi.co/api/v2/item-category/42/"},{"name":"mega-stones","url":"https://pokeapi.co/api/v2/item-category/44/"},{"name":"memories","url":"https://pokeapi.co/api/v2/item-category/45/"}],"id":1,"name":"misc","names":[{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Objets"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Items"}]}'
+    http_version: 
+  recorded_at: Sun, 14 Apr 2019 22:48:58 GMT
+recorded_with: VCR 4.0.0

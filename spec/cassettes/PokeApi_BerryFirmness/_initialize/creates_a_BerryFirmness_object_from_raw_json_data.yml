@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/berry-firmness/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Apr 2019 06:28:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2a32d0eaab2d39564d35cf6637c6ae161555136907; expires=Sun, 12-Apr-20
+        06:28:27 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"2d6-+vR6e5hZ1ZEzoJwBiP0LC/c/60k"
+      Function-Execution-Id:
+      - ybirsd8duu76
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - f595dc907dea9e08dd942f77b37b0012
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8636-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1555136907.022861,VS0,VE232
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c6b6144daf378da-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJiZXJyaWVzIjpbeyJuYW1lIjoicGVjaGEiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2JlcnJ5LzMvIn0seyJuYW1lIjoicGFtdHJlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9iZXJyeS8zMi8ifSx7Im5hbWUiOiJiZWx1ZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvYmVycnkvMzUvIn0seyJuYW1lIjoid2FjYW4iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2JlcnJ5LzM4LyJ9LHsibmFtZSI6InRhbmdhIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9iZXJyeS80Ni8ifSx7Im5hbWUiOiJjaGFydGkiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2JlcnJ5LzQ3LyJ9LHsibmFtZSI6ImNoaWxhbiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvYmVycnkvNTIvIn0seyJuYW1lIjoicm93YXAiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2JlcnJ5LzY0LyJ9XSwiaWQiOjEsIm5hbWUiOiJ2ZXJ5LXNvZnQiLCJuYW1lcyI6W3sibGFuZ3VhZ2UiOnsibmFtZSI6ImZyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS81LyJ9LCJuYW1lIjoiVHLDqHMgdGVuZHJlIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiZW4iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzkvIn0sIm5hbWUiOiJWZXJ5IFNvZnQifV19
+    http_version: 
+  recorded_at: Sat, 13 Apr 2019 06:28:27 GMT
+recorded_with: VCR 4.0.0

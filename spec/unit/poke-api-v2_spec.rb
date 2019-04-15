@@ -45,8 +45,40 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINTS' do
+      it 'sets correct :berry_firmness value' do
+        expect(ENDPOINTS[:berry_firmness]).to eq('berry-firmness/')
+      end
+
+      it 'sets correct :berry value' do
+        expect(ENDPOINTS[:berry]).to eq('berry/')
+      end
+
+      it 'sets correct :encounter_condition_value value' do
+        expect(ENDPOINTS[:encounter_condition_value]).to eq('encounter-condition-value/')
+      end
+
+      it 'sets correct :encounter_condition value' do
+        expect(ENDPOINTS[:encounter_condition]).to eq('encounter-condition/')
+      end
+
       it 'sets correct :encounter_method value' do
         expect(ENDPOINTS[:encounter_method]).to eq('encounter-method/')
+      end
+
+      it 'sets correct :item value' do
+        expect(ENDPOINTS[:item]).to eq('item/')
+      end
+
+      it 'sets correct :item_attribute value' do
+        expect(ENDPOINTS[:item_attribute]).to eq('item-attribute/')
+      end
+
+      it 'sets correct :item_category value' do
+        expect(ENDPOINTS[:item_category]).to eq('item-category/')
+      end
+
+      it 'sets correct :item_fling_effect value' do
+        expect(ENDPOINTS[:item_fling_effect]).to eq('item-fling-effect/')
       end
 
       it 'sets correct :location_area value' do
@@ -55,6 +87,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :location value' do
         expect(ENDPOINTS[:location]).to eq('location/')
+      end
+
+      it 'sets correct :machine value' do
+        expect(ENDPOINTS[:machine]).to eq('machine/')
       end
 
       it 'sets correct :move_learn_method value' do
@@ -73,6 +109,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:region]).to eq('region/')
       end
 
+      it 'sets correct :type value' do
+        expect(ENDPOINTS[:type]).to eq('type/')
+      end
+
       it 'sets correct :version value' do
         expect(ENDPOINTS[:version]).to eq('version/')
       end
@@ -83,8 +123,28 @@ RSpec.describe PokeApi, :vcr  do
     end
 
     context 'ENDPOINT_OBJECTS' do
+      it 'sets correct :attributes value' do
+        expect(ENDPOINT_OBJECTS[:attributes]).to eq(PokeApi::ItemAttribute)
+      end
+
+      it 'sets correct :berry value' do
+        expect(ENDPOINT_OBJECTS[:berry]).to eq(PokeApi::Berry)
+      end
+
+      it 'sets correct :condition value' do
+        expect(ENDPOINT_OBJECTS[:condition]).to eq(PokeApi::EncounterCondition)
+      end
+
+      it 'sets correct :damage_relations value' do
+        expect(ENDPOINT_OBJECTS[:damage_relations]).to eq(PokeApi::Type::TypeRelations)
+      end
+
       it 'sets correct :descriptions value' do
         expect(ENDPOINT_OBJECTS[:descriptions]).to eq(PokeApi::Common::Description)
+      end
+
+      it 'sets correct :effect_entries value' do
+        expect(ENDPOINT_OBJECTS[:effect_entries]).to eq(PokeApi::Common::Effect)
       end
 
       it 'sets correct :encounter_details value' do
@@ -99,8 +159,24 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
       end
 
+      it 'sets correct :item value' do
+        expect(ENDPOINT_OBJECTS[:item]).to eq(PokeApi::Item)
+      end
+
+      it 'sets correct :firmness value' do
+        expect(ENDPOINT_OBJECTS[:firmness]).to eq(PokeApi::BerryFirmness)
+      end
+
+      it 'sets correct :flavor value' do
+        expect(ENDPOINT_OBJECTS[:flavor]).to eq(PokeApi::Berry::BerryFlavorMap)
+      end
+
       it 'sets correct :game_index value' do
-        expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GameIndex)
+        expect(ENDPOINT_OBJECTS[:game_indices]).to eq(PokeApi::Common::GenerationGameIndex)
+      end
+
+      it 'sets correct :held_by_pokemon value' do
+        expect(ENDPOINT_OBJECTS[:held_by_pokemon]).to eq(PokeApi::Item::ItemHolderPokemon)
       end
 
       it 'sets correct :language value' do
@@ -115,12 +191,20 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:location]).to eq(PokeApi::Location)
       end
 
+      it 'sets correct :machines value' do
+        expect(ENDPOINT_OBJECTS[:machines]).to eq(PokeApi::Common::MachineVersionDetail)
+      end
+
       it 'sets correct :move_learn_method value' do
         expect(ENDPOINT_OBJECTS[:move_learn_method]).to eq(PokeApi::MoveLearnMethod)
       end
 
       it 'sets correct :names value' do
         expect(ENDPOINT_OBJECTS[:names]).to eq(PokeApi::Common::Name)
+      end
+
+      it 'sets correct :natural_gift_type value' do
+        expect(ENDPOINT_OBJECTS[:natural_gift_type]).to eq(PokeApi::Type)
       end
 
       it 'sets correct :pokedex value' do
@@ -141,6 +225,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :region value' do
         expect(ENDPOINT_OBJECTS[:region]).to eq(PokeApi::Region)
+      end
+
+      it 'sets correct :values value' do
+        expect(ENDPOINT_OBJECTS[:values]).to eq(PokeApi::EncounterConditionValue)
       end
 
       it 'sets correct :version value' do

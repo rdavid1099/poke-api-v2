@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/encounter-condition-value/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Apr 2019 03:44:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d80bedf6e7e44f38f38c69e1b2e73aba81554781467; expires=Wed, 08-Apr-20
+        03:44:27 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"146-XYjoJ6b8PBUe8XC+HJ1acwAXmC8"
+      Function-Execution-Id:
+      - gpf9zqgzqp2x
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 665cb3bb27a92edced1c2e30e4e1165a;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8644-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1554781468.981287,VS0,VE284
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c497b8ebda822b8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb25kaXRpb24iOnsibmFtZSI6InN3YXJtIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9lbmNvdW50ZXItY29uZGl0aW9uLzEvIn0sImlkIjoxLCJuYW1lIjoic3dhcm0teWVzIiwibmFtZXMiOlt7Imxhbmd1YWdlIjp7Im5hbWUiOiJkZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvNi8ifSwibmFtZSI6IlfDpGhyZW5kIGVpbmVzIFNjaHdhcm1zIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiZW4iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzkvIn0sIm5hbWUiOiJEdXJpbmcgYSBzd2FybSJ9XX0=
+    http_version: 
+  recorded_at: Tue, 09 Apr 2019 03:44:28 GMT
+recorded_with: VCR 4.0.0

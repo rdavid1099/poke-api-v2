@@ -1,7 +1,7 @@
 module PokeApi
   module Common
-    # Name object handling lists of names and languages
-    class GameIndex
+    # GenerationGameIndex object handling lists of game_index and generation
+    class GenerationGameIndex
       attr_reader :game_index,
                   :generation
 

@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/encounter-condition/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Apr 2019 22:59:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df6f89b948ef4bbfeb190754411b12eb51554850790; expires=Wed, 08-Apr-20
+        22:59:50 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"1de-2x4Ra3HNdeQbJyfg5Z2Ef8Puoj4"
+      Function-Execution-Id:
+      - kvi090gb0pdz
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 6e6099cec9ad430b64afb21af200ea43;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17540-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1554850790.326150,VS0,VE382
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c5017ff3f09784a-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"name":"swarm","names":[{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Essaim"},{"language":{"name":"de","url":"https://pokeapi.co/api/v2/language/6/"},"name":"Schwarm"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Swarm"}],"values":[{"name":"swarm-yes","url":"https://pokeapi.co/api/v2/encounter-condition-value/1/"},{"name":"swarm-no","url":"https://pokeapi.co/api/v2/encounter-condition-value/2/"}]}'
+    http_version: 
+  recorded_at: Tue, 09 Apr 2019 22:59:50 GMT
+recorded_with: VCR 4.0.0

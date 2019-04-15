@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/item-category/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Apr 2019 22:31:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d13481cde3db3cf2e1f1e32b283884c731555281086; expires=Mon, 13-Apr-20
+        22:31:26 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"2d7-41KMdcij+I5iL7LjUzGE/LLNW5Q"
+      Function-Execution-Id:
+      - h452k1k0dy1l
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 8234ed7efc9287f8ee4aa45c94bda2ae
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17524-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1555281086.015218,VS0,VE266
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c79214388ae997f-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"items":[{"name":"guard-spec","url":"https://pokeapi.co/api/v2/item/55/"},{"name":"dire-hit","url":"https://pokeapi.co/api/v2/item/56/"},{"name":"x-attack","url":"https://pokeapi.co/api/v2/item/57/"},{"name":"x-defense","url":"https://pokeapi.co/api/v2/item/58/"},{"name":"x-speed","url":"https://pokeapi.co/api/v2/item/59/"},{"name":"x-accuracy","url":"https://pokeapi.co/api/v2/item/60/"},{"name":"x-sp-atk","url":"https://pokeapi.co/api/v2/item/61/"},{"name":"x-sp-def","url":"https://pokeapi.co/api/v2/item/62/"}],"name":"stat-boosts","names":[{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Stat
+        boosts"}],"pocket":{"name":"battle","url":"https://pokeapi.co/api/v2/item-pocket/7/"}}'
+    http_version: 
+  recorded_at: Sun, 14 Apr 2019 22:31:26 GMT
+recorded_with: VCR 4.0.0

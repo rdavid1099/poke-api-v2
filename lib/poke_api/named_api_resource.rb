@@ -17,7 +17,7 @@ module PokeApi
     def assign_data(data)
       data.each_key do |key|
         data_chunk = data[key]
-        if (klass = ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[key.singularize])
+        if (klass = endpoint_assignment(key: key, custom_endpoint_object: custom_endpoint_object))
           assign_object(klass, data_chunk, key)
         else
           instance_variable_set("@#{key}", data_chunk)
@@ -26,6 +26,8 @@ module PokeApi
     end
 
     def assign_object(klass, data, key)
+      return unless data
+
       assignment = if data.is_a? Array
                      assign_list(klass: klass, data: data)
                    else
