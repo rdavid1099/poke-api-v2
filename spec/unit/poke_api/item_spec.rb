@@ -9,7 +9,7 @@ RSpec.describe PokeApi::Item, :vcr do
       lucky_egg = PokeApi::Item.new(raw_egg_data)
 
       expect(machine.id).to eq(397)
-      expect(machine.name).to eq("hm01")
+      expect(machine.name).to eq('hm01')
       expect(machine.cost).to eq(0)
       expect(lucky_egg.attributes.first.class).to eq(PokeApi::ItemAttribute)
       expect(machine.attributes.first.class).to eq(NilClass)
@@ -24,6 +24,15 @@ RSpec.describe PokeApi::Item, :vcr do
       expect(machine.machines.first.class).to eq(PokeApi::Common::MachineVersionDetail)
       expect(lucky_egg.fling_power).to eq(30)
       expect(badly_poison.fling_effect.class).to eq(PokeApi::ItemFlingEffect)
+    end
+  end
+
+  describe '#get' do
+    it 'assigns data to correct custom objects' do
+      item = PokeApi::Item.new({ name: 'poke-ball', url: 'https://pokeapi.co/api/v2/item/4/' })
+      item.get
+
+      expect(item.sprites.class).to eq(PokeApi::Item::ItemSprites)
     end
   end
 end
