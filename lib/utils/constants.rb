@@ -25,6 +25,7 @@ ENDPOINTS = {
 ENDPOINT_OBJECTS = {
   attributes: PokeApi::ItemAttribute,
   berry: PokeApi::Berry,
+  chain: PokeApi::EvolutionChain::ChainLink,
   condition: PokeApi::EncounterCondition,
   damage_relations: PokeApi::Type::TypeRelations,
   descriptions: PokeApi::Common::Description,

@@ -7,5 +7,30 @@ module PokeApi
     def initialize(data)
       assign_data(data)
     end
+
+    # ChainLink object handling linked list type data regarding pokemon evolutions
+    class ChainLink
+      include AssignmentHelpers
+
+      attr_reader :is_baby,
+                  :species,
+                  :evoluation_details,
+                  :evolves_to
+
+      def initialize(data)
+        @is_baby = data[:is_baby]
+        # @species = PokemonSpecies.new(data[:species])
+        @evoluation_details = assign_list(data: data[:evoluation_details], klass: EvolutionDetail)
+        @evolves_to = assign_list(data: data[:evolves_to], klass: ChainLink)
+      end
+    end
+
+    private
+
+    def custom_endpoint_object
+      {
+        baby_trigger_item: Item
+      }
+    end
   end
 end
