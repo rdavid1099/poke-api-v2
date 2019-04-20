@@ -7,7 +7,7 @@ RSpec.describe PokeApi::EvolutionChain::ChainLink do
           name: 'rattata',
           url: 'https://pokeapi.co/api/v2/pokemon-species/19/'
         },
-        evolution_details: nil,
+        evolution_details: [],
         evolves_to: [
           {
             is_baby: false,
@@ -50,8 +50,8 @@ RSpec.describe PokeApi::EvolutionChain::ChainLink do
       expect(link.is_baby).to eq(false)
       # expect(link.species.class).to eq(PokeApi::PokemonSpecies)
       expect(link.evolution_details.first).to eq(nil)
-      # expect(link.evolves_to.first.class).to eq(PokeApi::EvolutionChain::ChainLink)
-      # expect(link.evolves_to.first.evolution_details.first.class).to eq(PokeApi::EvolutionChain::EvolutionDetail)
+      expect(link.evolves_to.first.class).to eq(PokeApi::EvolutionChain::ChainLink)
+      expect(link.evolves_to.first.evolution_details.first.class).to eq(PokeApi::EvolutionChain::EvolutionDetail)
     end
   end
 end

@@ -14,13 +14,13 @@ module PokeApi
 
       attr_reader :is_baby,
                   :species,
-                  :evoluation_details,
+                  :evolution_details,
                   :evolves_to
 
       def initialize(data)
         @is_baby = data[:is_baby]
         # @species = PokemonSpecies.new(data[:species])
-        @evoluation_details = assign_list(data: data[:evoluation_details], klass: EvolutionDetail)
+        @evolution_details = assign_list(data: data[:evolution_details], klass: EvolutionDetail)
         @evolves_to = assign_list(data: data[:evolves_to], klass: ChainLink)
       end
     end

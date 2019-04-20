@@ -17,4 +17,10 @@ module AssignmentHelpers
   def custom_endpoint_object
     {}
   end
+
+  def try_to_assign(data:, klass:)
+    return unless data
+
+    klass.new(data)
+  end
 end
