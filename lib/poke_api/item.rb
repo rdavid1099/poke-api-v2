@@ -23,6 +23,7 @@ module PokeApi
 
     def custom_endpoint_object
       {
+        baby_trigger_for: EvolutionChain,
         category: ItemCategory,
         effect_entries: Common::VerboseEffect,
         flavor_text_entries: Common::VersionGroupFlavorText,

@@ -65,6 +65,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:encounter_method]).to eq('encounter-method/')
       end
 
+      it 'sets correct :evolution_chain value' do
+        expect(ENDPOINTS[:evolution_chain]).to eq('evolution-chain/')
+      end
+
       it 'sets correct :item value' do
         expect(ENDPOINTS[:item]).to eq('item/')
       end
@@ -131,6 +135,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:berry]).to eq(PokeApi::Berry)
       end
 
+      it 'sets correct :chain value' do
+        expect(ENDPOINT_OBJECTS[:chain]).to eq(PokeApi::EvolutionChain::ChainLink)
+      end
+
       it 'sets correct :condition value' do
         expect(ENDPOINT_OBJECTS[:condition]).to eq(PokeApi::EncounterCondition)
       end
@@ -157,6 +165,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :encounter_method_rate value' do
         expect(ENDPOINT_OBJECTS[:encounter_method_rate]).to eq(PokeApi::LocationArea::EncounterMethodRate)
+      end
+
+      it 'sets correct :evolution_chain value' do
+        expect(ENDPOINT_OBJECTS[:evolution_chain]).to eq(PokeApi::EvolutionChain)
       end
 
       it 'sets correct :item value' do

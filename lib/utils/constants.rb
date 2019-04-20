@@ -5,6 +5,7 @@ ENDPOINTS = {
   encounter_condition_value: 'encounter-condition-value/',
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
+  evolution_chain: 'evolution-chain/',
   item: 'item/',
   item_attribute: 'item-attribute/',
   item_category: 'item-category/',
@@ -24,6 +25,7 @@ ENDPOINTS = {
 ENDPOINT_OBJECTS = {
   attributes: PokeApi::ItemAttribute,
   berry: PokeApi::Berry,
+  chain: PokeApi::EvolutionChain::ChainLink,
   condition: PokeApi::EncounterCondition,
   damage_relations: PokeApi::Type::TypeRelations,
   descriptions: PokeApi::Common::Description,
@@ -31,6 +33,7 @@ ENDPOINT_OBJECTS = {
   encounter_details: PokeApi::Common::Encounter,
   encounter_method: PokeApi::EncounterMethod,
   encounter_method_rate: PokeApi::LocationArea::EncounterMethodRate,
+  evolution_chain: PokeApi::EvolutionChain,
   firmness: PokeApi::BerryFirmness,
   flavor: PokeApi::Berry::BerryFlavorMap,
   fling_effect: PokeApi::ItemFlingEffect,
