@@ -139,6 +139,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:berry]).to eq(PokeApi::Berry)
       end
 
+      it 'sets correct :berry_firmness value' do
+        expect(ENDPOINT_OBJECTS[:berry_firmness]).to eq(PokeApi::BerryFirmness)
+      end
+
       it 'sets correct :chain value' do
         expect(ENDPOINT_OBJECTS[:chain]).to eq(PokeApi::EvolutionChain::ChainLink)
       end
@@ -159,6 +163,14 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:effect_entries]).to eq(PokeApi::Common::Effect)
       end
 
+      it 'sets correct :encounter_condition_value value' do
+        expect(ENDPOINT_OBJECTS[:encounter_condition_value]).to eq(PokeApi::EncounterConditionValue)
+      end
+
+      it 'sets correct :encounter_condition value' do
+        expect(ENDPOINT_OBJECTS[:encounter_condition]).to eq(PokeApi::EncounterCondition)
+      end
+
       it 'sets correct :encounter_details value' do
         expect(ENDPOINT_OBJECTS[:encounter_details]).to eq(PokeApi::Common::Encounter)
       end
@@ -173,6 +185,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :evolution_chain value' do
         expect(ENDPOINT_OBJECTS[:evolution_chain]).to eq(PokeApi::EvolutionChain)
+      end
+
+      it 'sets correct :evolution_trigger value' do
+        expect(ENDPOINT_OBJECTS[:evolution_trigger]).to eq(PokeApi::EvolutionTrigger)
       end
 
       it 'sets correct :item value' do
@@ -195,6 +211,26 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINT_OBJECTS[:held_by_pokemon]).to eq(PokeApi::Item::ItemHolderPokemon)
       end
 
+      it 'sets correct :item value' do
+        expect(ENDPOINT_OBJECTS[:item]).to eq(PokeApi::Item)
+      end
+
+      it 'sets correct :item_attribute value' do
+        expect(ENDPOINT_OBJECTS[:item_attribute]).to eq(PokeApi::ItemAttribute)
+      end
+
+      it 'sets correct :item_category value' do
+        expect(ENDPOINT_OBJECTS[:item_category]).to eq(PokeApi::ItemCategory)
+      end
+
+      it 'sets correct :item_fling_effect value' do
+        expect(ENDPOINT_OBJECTS[:item_fling_effect]).to eq(PokeApi::ItemFlingEffect)
+      end
+
+      it 'sets correct :item_pocket value' do
+        expect(ENDPOINT_OBJECTS[:item_pocket]).to eq(PokeApi::ItemPocket)
+      end
+
       it 'sets correct :language value' do
         expect(ENDPOINT_OBJECTS[:language]).to eq(PokeApi::Utility::Language)
       end
@@ -205,6 +241,10 @@ RSpec.describe PokeApi, :vcr  do
 
       it 'sets correct :location value' do
         expect(ENDPOINT_OBJECTS[:location]).to eq(PokeApi::Location)
+      end
+
+      it 'sets correct :machine value' do
+        expect(ENDPOINT_OBJECTS[:machine]).to eq(PokeApi::Machine)
       end
 
       it 'sets correct :machines value' do
