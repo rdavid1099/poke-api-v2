@@ -6,6 +6,7 @@ ENDPOINTS = {
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
   evolution_chain: 'evolution-chain/',
+  evolution_trigger: 'evolution-trigger/',
   item: 'item/',
   item_attribute: 'item-attribute/',
   item_category: 'item-category/',
