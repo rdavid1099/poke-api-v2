@@ -1,5 +1,5 @@
 module PokeApi
-  class EvolutionChain < NamedApiResource
+  class EvolutionChain
     # EvolutionDetail object handling details data regarding pokemon evolutions
     class EvolutionDetail
       include AssignmentHelpers
@@ -23,9 +23,10 @@ module PokeApi
                   :trade_species,
                   :turn_upside_down
 
+      # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
       def initialize(data)
         @item = try_to_assign(data: data[:item], klass: Item)
-        # @trigger = try_to_assign(data: data[:trigger], klass: EvolutionTrigger)
+        @trigger = try_to_assign(data: data[:trigger], klass: EvolutionTrigger)
         @gender = data[:gender]
         @held_item = try_to_assign(data: data[:held_item], klass: Item)
         # @known_move = try_to_assign(data: data[:known_move], klass: Move)
@@ -43,6 +44,7 @@ module PokeApi
         # @trade_species = try_to_assign(data: data[:trade_species], klass: PokemonSpecies)
         @turn_upside_down = data[:turn_upside_down]
       end
+      # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
     end
   end
 end

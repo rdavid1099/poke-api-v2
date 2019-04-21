@@ -69,6 +69,10 @@ RSpec.describe PokeApi, :vcr  do
         expect(ENDPOINTS[:evolution_chain]).to eq('evolution-chain/')
       end
 
+      it 'sets correct :evolution_trigger value' do
+        expect(ENDPOINTS[:evolution_trigger]).to eq('evolution-trigger/')
+      end
+
       it 'sets correct :item value' do
         expect(ENDPOINTS[:item]).to eq('item/')
       end
