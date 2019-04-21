@@ -16,6 +16,7 @@ ENDPOINTS = {
   location: 'location/',
   machine: 'machine/',
   move_learn_method: 'move-learn-method/',
+  move: 'move/',
   pokedex: 'pokedex/',
   pokemon: 'pokemon/',
   region: 'region/',
@@ -46,6 +47,7 @@ ENDPOINT_OBJECTS = {
   location: PokeApi::Location,
   machines: PokeApi::Common::MachineVersionDetail,
   move_learn_method: PokeApi::MoveLearnMethod,
+  move: PokeApi::Move,
   names: PokeApi::Common::Name,
   natural_gift_type: PokeApi::Type,
   pocket: PokeApi::ItemPocket,
@@ -54,6 +56,7 @@ ENDPOINT_OBJECTS = {
   pokemon_entries: PokeApi::Pokedex::PokemonEntry,
   pokemon: PokeApi::Pokemon,
   region: PokeApi::Region,
+  type: PokeApi::Type,
   values: PokeApi::EncounterConditionValue,
   version: PokeApi::Version,
   version_group: PokeApi::VersionGroup
