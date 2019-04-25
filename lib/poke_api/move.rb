@@ -33,7 +33,8 @@ module PokeApi
       {
         contest_combos: ContestComboSets,
         effect_entries: Common::VerboseEffect,
-        flavor_text_entries: MoveFlavorText
+        flavor_text_entries: MoveFlavorText,
+        meta: MoveMetaData
       }
     end
   end

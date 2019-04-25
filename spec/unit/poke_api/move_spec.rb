@@ -21,7 +21,7 @@ RSpec.describe PokeApi::Move, :vcr do
       # expect(move.effect_changes.first.class).to eq(PokeApi::Ability::AbilityEffectChange)
       expect(move.flavor_text_entries.first.class).to eq(PokeApi::Move::MoveFlavorText)
       # expect(move.generation).to eq(PokeApi::Generation)
-      expect(move.machines.first.class).to eq(PokeApi::Common::MachineVersionDetail)
+      expect(move.machines).to eq([])
       expect(move.meta.class).to eq(PokeApi::Move::MoveMetaData)
       expect(move.past_values.first.class).to eq(PokeApi::Move::PastMoveStatValues)
       expect(move.stat_changes.first.class).to eq(PokeApi::Move::MoveStatChange)
