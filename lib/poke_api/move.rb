@@ -30,7 +30,9 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      {}
+      {
+        contest_combos: ContestComboSets
+      }
     end
   end
 end
