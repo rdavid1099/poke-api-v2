@@ -31,7 +31,9 @@ module PokeApi
 
     def custom_endpoint_object
       {
-        contest_combos: ContestComboSets
+        contest_combos: ContestComboSets,
+        effect_entries: Common::VerboseEffect,
+        flavor_text_entries: MoveFlavorText
       }
     end
   end

@@ -1,6 +1,6 @@
 RSpec.describe PokeApi::Move::ContestComboSets do
   describe '#initialize' do
-    it 'creates a basic PokemonEntry object from raw json data' do
+    it 'creates a basic ContestComboSets object from raw json data' do
       raw_data = {
         normal: {
           use_before: [
