@@ -19,8 +19,8 @@ RSpec.describe PokeApi::Stat::NatureStatAffectSets do
       nsas = PokeApi::Stat::NatureStatAffectSets.new(raw_data)
 
       expect(nsas.class).to eq(PokeApi::Stat::NatureStatAffectSets)
-      # expect(nsas.increase.first.class).to eq(PokeApi::Nature)
-      # expect(nsas.decrease.first.class).to eq(PokeApi::Nature)
+      expect(nsas.increase.first.class).to eq(PokeApi::Nature)
+      expect(nsas.decrease.first.class).to eq(PokeApi::Nature)
     end
   end
 end
