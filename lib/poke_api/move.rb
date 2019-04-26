@@ -35,7 +35,8 @@ module PokeApi
         effect_entries: Common::VerboseEffect,
         flavor_text_entries: MoveFlavorText,
         meta: MoveMetaData,
-        past_values: PastMoveStatValue
+        past_values: PastMoveStatValue,
+        stat_changes: MoveStatChange
       }
     end
   end
