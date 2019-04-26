@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/evolution-chain/100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 20 Apr 2019 22:18:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df8a27efe9d3f133fa48406373453c7e21555798702; expires=Sun, 19-Apr-20
+        22:18:22 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"329-FqKtNK/GzqEXD+zqUtFhYiF3LDs"
+      Function-Execution-Id:
+      - aim5hwzayd50
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - b728594cc59579cf7cad31ca9ec934b3
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17521-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1555798703.976032,VS0,VE292
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4caa7e658c5978da-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"baby_trigger_item":{"name":"lax-incense","url":"https://pokeapi.co/api/v2/item/232/"},"chain":{"evolution_details":[],"evolves_to":[{"evolution_details":[{"gender":null,"held_item":null,"item":null,"known_move":null,"known_move_type":null,"location":null,"min_affection":null,"min_beauty":null,"min_happiness":null,"min_level":15,"needs_overworld_rain":false,"party_species":null,"party_type":null,"relative_physical_stats":null,"time_of_day":"","trade_species":null,"trigger":{"name":"level-up","url":"https://pokeapi.co/api/v2/evolution-trigger/1/"},"turn_upside_down":false}],"evolves_to":[],"is_baby":false,"species":{"name":"wobbuffet","url":"https://pokeapi.co/api/v2/pokemon-species/202/"}}],"is_baby":true,"species":{"name":"wynaut","url":"https://pokeapi.co/api/v2/pokemon-species/360/"}},"id":100}'
+    http_version: 
+  recorded_at: Sat, 20 Apr 2019 22:18:23 GMT
+recorded_with: VCR 4.0.0
