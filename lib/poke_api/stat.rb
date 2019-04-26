@@ -6,6 +6,7 @@ module PokeApi
                 :affecting_moves,
                 :affecting_natures,
                 :characteristics,
+                :move_damage_class,
                 :names
 
     def initialize(data)
@@ -15,7 +16,9 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      {}
+      {
+        affecting_moves: MoveStatAffectSets
+      }
     end
   end
 end
