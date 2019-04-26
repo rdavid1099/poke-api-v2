@@ -7,7 +7,7 @@ module PokeApi
 
       def initialize(data)
         @change = data[:change]
-        # @stat = Stat.new(data[:stat])
+        @stat = Stat.new(data[:stat])
       end
     end
   end

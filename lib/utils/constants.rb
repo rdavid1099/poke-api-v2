@@ -20,6 +20,7 @@ ENDPOINTS = {
   pokedex: 'pokedex/',
   pokemon: 'pokemon/',
   region: 'region/',
+  stat: 'stat/',
   type: 'type/',
   version: 'version/',
   version_group: 'version-group/'
@@ -65,6 +66,7 @@ ENDPOINT_OBJECTS = {
   pokemon_entries: PokeApi::Pokedex::PokemonEntry,
   pokemon: PokeApi::Pokemon,
   region: PokeApi::Region,
+  stat: PokeApi::Stat,
   type: PokeApi::Type,
   values: PokeApi::EncounterConditionValue,
   version: PokeApi::Version,
