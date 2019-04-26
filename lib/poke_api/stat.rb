@@ -17,7 +17,8 @@ module PokeApi
 
     def custom_endpoint_object
       {
-        affecting_moves: MoveStatAffectSets
+        affecting_moves: MoveStatAffectSets,
+        affecting_natures: NatureStatAffectSets
       }
     end
   end
