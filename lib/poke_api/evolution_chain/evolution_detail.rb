@@ -29,7 +29,7 @@ module PokeApi
         @trigger = try_to_assign(data: data[:trigger], klass: EvolutionTrigger)
         @gender = data[:gender]
         @held_item = try_to_assign(data: data[:held_item], klass: Item)
-        # @known_move = try_to_assign(data: data[:known_move], klass: Move)
+        @known_move = try_to_assign(data: data[:known_move], klass: Move)
         @known_move_type = try_to_assign(data: data[:known_move_type], klass: Type)
         @location = try_to_assign(data: data[:location], klass: Location)
         @min_level = data[:min_level]

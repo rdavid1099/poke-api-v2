@@ -45,7 +45,7 @@ RSpec.describe PokeApi::EvolutionChain::EvolutionDetail do
       expect(evolution_detail.trigger.class).to eq(PokeApi::EvolutionTrigger)
       expect(evolution_detail.gender).to eq(nil)
       expect(evolution_detail.held_item.class).to eq(PokeApi::Item)
-      # expect(evolution_detail.known_move.class).to eq(PokeApi::Move)
+      expect(evolution_detail.known_move.class).to eq(PokeApi::Move)
       expect(evolution_detail.known_move_type.class).to eq(PokeApi::Type)
       expect(evolution_detail.location.class).to eq(PokeApi::Location)
       expect(evolution_detail.min_level).to eq(20)

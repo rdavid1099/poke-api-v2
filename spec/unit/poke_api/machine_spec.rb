@@ -7,7 +7,7 @@ RSpec.describe PokeApi::Machine, :vcr do
       expect(machine.class).to eq(PokeApi::Machine)
       expect(machine.id).to eq(1)
       expect(machine.item.class).to eq(PokeApi::Item)
-      # expect(machine.move.class).to eq(PokeApi::Move)
+      expect(machine.move.class).to eq(PokeApi::Move)
       expect(machine.version_group.class).to eq(PokeApi::VersionGroup)
     end
   end
