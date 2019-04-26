@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Move::MoveStatChange do
 
       expect(msc.class).to eq(PokeApi::Move::MoveStatChange)
       expect(msc.change).to eq(50)
-      # expect(msc.stat.class).to eq(PokeApi::Stat)
+      expect(msc.stat.class).to eq(PokeApi::Stat)
     end
   end
 end
