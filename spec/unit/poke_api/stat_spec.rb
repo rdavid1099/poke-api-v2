@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Stat, :vcr do
       expect(stat.is_battle_only).to eq(false)
       expect(stat.affecting_moves.class).to eq(PokeApi::Stat::MoveStatAffectSets)
       expect(stat.affecting_natures.class).to eq(PokeApi::Stat::NatureStatAffectSets)
-      # expect(stat.characteristics.class).to eq(PokeApi::Characteristics)
+      expect(stat.characteristics.first.class).to eq(PokeApi::Characteristic)
       # expect(stat.move_damage_class.class).to eq(PokeApi::MoveDamageClass)
     end
   end
