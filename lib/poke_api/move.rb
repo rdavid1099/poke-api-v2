@@ -36,7 +36,8 @@ module PokeApi
         flavor_text_entries: MoveFlavorText,
         meta: MoveMetaData,
         past_values: PastMoveStatValue,
-        stat_changes: MoveStatChange
+        stat_changes: MoveStatChange,
+        target: MoveTarget
       }
     end
   end
