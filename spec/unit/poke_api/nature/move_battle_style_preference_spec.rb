@@ -14,7 +14,7 @@ RSpec.describe PokeApi::Nature::MoveBattleStylePreference do
       expect(mbsp.class).to eq(PokeApi::Nature::MoveBattleStylePreference)
       expect(mbsp.low_hp_preference).to eq(32)
       expect(mbsp.high_hp_preference).to eq(30)
-      # expect(mbsp.move_battle_style.class).to eq(PokeApi::MoveBattleStyle)
+      expect(mbsp.move_battle_style.class).to eq(PokeApi::MoveBattleStyle)
     end
   end
 end

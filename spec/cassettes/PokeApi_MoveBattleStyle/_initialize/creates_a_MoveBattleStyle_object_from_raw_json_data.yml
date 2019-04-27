@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/move-battle-style/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 01:06:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dffbfd2bf06124b0eaf8acd3543b3703c1556327182; expires=Sun, 26-Apr-20
+        01:06:22 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"d5-KJ8iMMrIo1FUlmL47wdKXmZ5ToI"
+      Function-Execution-Id:
+      - hr0e40bm2kpc
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 1ce962ce1163cfa15fa21695073c14e8;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17534-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556327182.274425,VS0,VE232
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4cdce4b91d71d330-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"name":"attack","names":[{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Attaque"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Attack"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 01:06:22 GMT
+recorded_with: VCR 4.0.0

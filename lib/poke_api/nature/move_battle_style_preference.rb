@@ -10,7 +10,7 @@ module PokeApi
       def initialize(data)
         @low_hp_preference = data[:low_hp_preference]
         @high_hp_preference = data[:high_hp_preference]
-        # @move_battle_style = MoveBattleStyle.new(data[:move_battle_style])
+        @move_battle_style = MoveBattleStyle.new(data[:move_battle_style])
       end
     end
   end
