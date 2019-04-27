@@ -1,5 +1,5 @@
 module PokeApi
-  # MoveAilment object handling all data fetched from /characteristic
+  # MoveAilment object handling all data fetched from /move-ailment
   class MoveAilment < NamedApiResource
     attr_reader :moves,
                 :names
