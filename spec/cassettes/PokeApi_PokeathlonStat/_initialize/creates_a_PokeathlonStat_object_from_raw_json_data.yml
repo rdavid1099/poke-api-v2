@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/pokeathlon-stat/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 01:36:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '364'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0ae847a6d2c2f4eabc706230c1b148811556328985; expires=Sun, 26-Apr-20
+        01:36:25 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"7f0-QPNmG7nbme4NYk8oT0RQzXj2kXM"
+      Function-Execution-Id:
+      - fhrv41yso995
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - ca049fb0c0294c4dcd2a2fca2470fab7
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8650-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556328985.375982,VS0,VE284
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4cdd10be8b0fd394-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"affecting_natures":{"decrease":[{"max_change":-1,"nature":{"name":"hardy","url":"https://pokeapi.co/api/v2/nature/1/"}},{"max_change":-2,"nature":{"name":"bold","url":"https://pokeapi.co/api/v2/nature/2/"}},{"max_change":-2,"nature":{"name":"modest","url":"https://pokeapi.co/api/v2/nature/3/"}},{"max_change":-2,"nature":{"name":"calm","url":"https://pokeapi.co/api/v2/nature/4/"}},{"max_change":-1,"nature":{"name":"bashful","url":"https://pokeapi.co/api/v2/nature/13/"}},{"max_change":-2,"nature":{"name":"lax","url":"https://pokeapi.co/api/v2/nature/18/"}},{"max_change":-2,"nature":{"name":"brave","url":"https://pokeapi.co/api/v2/nature/21/"}},{"max_change":-2,"nature":{"name":"relaxed","url":"https://pokeapi.co/api/v2/nature/22/"}},{"max_change":-2,"nature":{"name":"quiet","url":"https://pokeapi.co/api/v2/nature/23/"}},{"max_change":-2,"nature":{"name":"sassy","url":"https://pokeapi.co/api/v2/nature/24/"}}],"increase":[{"max_change":2,"nature":{"name":"timid","url":"https://pokeapi.co/api/v2/nature/5/"}},{"max_change":2,"nature":{"name":"lonely","url":"https://pokeapi.co/api/v2/nature/6/"}},{"max_change":2,"nature":{"name":"gentle","url":"https://pokeapi.co/api/v2/nature/9/"}},{"max_change":2,"nature":{"name":"hasty","url":"https://pokeapi.co/api/v2/nature/10/"}},{"max_change":2,"nature":{"name":"adamant","url":"https://pokeapi.co/api/v2/nature/11/"}},{"max_change":2,"nature":{"name":"jolly","url":"https://pokeapi.co/api/v2/nature/16/"}},{"max_change":2,"nature":{"name":"naughty","url":"https://pokeapi.co/api/v2/nature/17/"}},{"max_change":1,"nature":{"name":"quirky","url":"https://pokeapi.co/api/v2/nature/19/"}},{"max_change":2,"nature":{"name":"naive","url":"https://pokeapi.co/api/v2/nature/20/"}},{"max_change":1,"nature":{"name":"serious","url":"https://pokeapi.co/api/v2/nature/25/"}}]},"id":1,"name":"speed","names":[{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Vitesse"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Speed"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 01:36:25 GMT
+recorded_with: VCR 4.0.0
