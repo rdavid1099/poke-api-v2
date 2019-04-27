@@ -10,8 +10,8 @@ RSpec.describe PokeApi::Nature, :vcr do
       expect(nature.names.first.class).to eq(PokeApi::Common::Name)
       expect(nature.decreased_stat.class).to eq(PokeApi::Stat)
       expect(nature.increased_stat.class).to eq(PokeApi::Stat)
-      # expect(nature.likes_flavor.class).to eq(PokeApi::BerryFlavor)
-      # expect(nature.hates_flavor.class).to eq(PokeApi::BerryFlavor)
+      expect(nature.likes_flavor.class).to eq(PokeApi::BerryFlavor)
+      expect(nature.hates_flavor.class).to eq(PokeApi::BerryFlavor)
       expect(nature.pokeathlon_stat_changes.first.class).to eq(PokeApi::Nature::NatureStatChange)
       expect(nature.move_battle_style_preferences.first.class).to eq(PokeApi::Nature::MoveBattleStylePreference)
     end

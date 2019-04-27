@@ -2,6 +2,7 @@ BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
   berry: 'berry/',
   berry_firmness: 'berry-firmness/',
+  berry_flavor: 'berry-flavor/',
   encounter_condition_value: 'encounter-condition-value/',
   encounter_condition: 'encounter-condition/',
   encounter_method: 'encounter-method/',
@@ -32,6 +33,7 @@ ENDPOINT_OBJECTS = {
   attributes: PokeApi::ItemAttribute,
   berry: PokeApi::Berry,
   berry_firmness: PokeApi::BerryFirmness,
+  berry_flavor: PokeApi::BerryFlavor,
   chain: PokeApi::EvolutionChain::ChainLink,
   condition: PokeApi::EncounterCondition,
   damage_relations: PokeApi::Type::TypeRelations,
