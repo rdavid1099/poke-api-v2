@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/move-ailment/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 20:30:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '368'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0e966bade060579576f35ceb9b44f0bd1556397043; expires=Sun, 26-Apr-20
+        20:30:43 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"646-aN+8m+7q4DqgxAYT1bnDlWlnm6U"
+      Function-Execution-Id:
+      - rp0jkp8d6ffj
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 5ab00c1ff8fe2e3c8d77d15819b7afb7
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17520-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556397043.341462,VS0,VE199
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ce38e50bfa877c0-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"moves":[{"name":"thunder-punch","url":"https://pokeapi.co/api/v2/move/9/"},{"name":"body-slam","url":"https://pokeapi.co/api/v2/move/34/"},{"name":"stun-spore","url":"https://pokeapi.co/api/v2/move/78/"},{"name":"thunder-shock","url":"https://pokeapi.co/api/v2/move/84/"},{"name":"thunderbolt","url":"https://pokeapi.co/api/v2/move/85/"},{"name":"thunder-wave","url":"https://pokeapi.co/api/v2/move/86/"},{"name":"thunder","url":"https://pokeapi.co/api/v2/move/87/"},{"name":"lick","url":"https://pokeapi.co/api/v2/move/122/"},{"name":"glare","url":"https://pokeapi.co/api/v2/move/137/"},{"name":"zap-cannon","url":"https://pokeapi.co/api/v2/move/192/"},{"name":"spark","url":"https://pokeapi.co/api/v2/move/209/"},{"name":"dragon-breath","url":"https://pokeapi.co/api/v2/move/225/"},{"name":"bounce","url":"https://pokeapi.co/api/v2/move/340/"},{"name":"volt-tackle","url":"https://pokeapi.co/api/v2/move/344/"},{"name":"force-palm","url":"https://pokeapi.co/api/v2/move/395/"},{"name":"thunder-fang","url":"https://pokeapi.co/api/v2/move/422/"},{"name":"discharge","url":"https://pokeapi.co/api/v2/move/435/"},{"name":"bolt-strike","url":"https://pokeapi.co/api/v2/move/550/"},{"name":"freeze-shock","url":"https://pokeapi.co/api/v2/move/553/"},{"name":"nuzzle","url":"https://pokeapi.co/api/v2/move/609/"},{"name":"stoked-sparksurfer","url":"https://pokeapi.co/api/v2/move/700/"}],"name":"paralysis","names":[{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Paralysie"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Paralysis"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 20:30:43 GMT
+recorded_with: VCR 4.0.0

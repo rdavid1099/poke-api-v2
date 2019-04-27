@@ -32,6 +32,7 @@ require "#{path}/../poke_api/location_area/encounter_method_rate/encounter_versi
 require "#{path}/../poke_api/location_area/pokemon_encounter"
 require "#{path}/../poke_api/location"
 require "#{path}/../poke_api/machine"
+require "#{path}/../poke_api/move_ailment"
 require "#{path}/../poke_api/move_battle_style"
 require "#{path}/../poke_api/move_category"
 require "#{path}/../poke_api/move_learn_method"
