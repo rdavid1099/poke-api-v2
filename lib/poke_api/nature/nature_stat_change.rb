@@ -7,7 +7,7 @@ module PokeApi
 
       def initialize(data)
         @max_change = data[:max_change]
-        # @pokeathlon_stat = PokeathlonStat.new(data[:pokeathlon_stat])
+        @pokeathlon_stat = PokeathlonStat.new(data[:pokeathlon_stat])
       end
     end
   end
