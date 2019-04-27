@@ -3,8 +3,6 @@ module PokeApi
     # NaturePokeathlonStatAffect object handling all data fetched from
     # /pokeathlon-stat affecting_natures
     class NaturePokeathlonStatAffect
-      include AssignmentHelpers
-
       attr_reader :max_change,
                   :nature
 
