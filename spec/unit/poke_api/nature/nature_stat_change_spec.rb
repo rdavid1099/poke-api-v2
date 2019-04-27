@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Nature::NatureStatChange do
 
       expect(nsc.class).to eq(PokeApi::Nature::NatureStatChange)
       expect(nsc.max_change).to eq(-2)
-      # expect(nsc.pokeathlon_stat.class).to eq(PokeApi::PokeathlonStat)
+      expect(nsc.pokeathlon_stat.class).to eq(PokeApi::PokeathlonStat)
     end
   end
 end
