@@ -16,7 +16,12 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      {}
+      {
+        decreased_stat: PokeApi::Stat,
+        increased_stat: PokeApi::Stat,
+        pokeathlon_stat_changes: NatureStatChange,
+        move_battle_style_preferences: MoveBattleStylePreference
+      }
     end
   end
 end
