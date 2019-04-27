@@ -8,8 +8,8 @@ module PokeApi
                   :decrease
 
       def initialize(data)
-        # @increase = assign_list(data: data[:increase], klass: Nature)
-        # @decrease = assign_list(data: data[:decrease], klass: Nature)
+        @increase = assign_list(data: data[:increase], klass: Nature)
+        @decrease = assign_list(data: data[:decrease], klass: Nature)
       end
     end
   end

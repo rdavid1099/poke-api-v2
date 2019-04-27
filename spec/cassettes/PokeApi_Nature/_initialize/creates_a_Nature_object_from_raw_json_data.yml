@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/nature/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 00:29:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '448'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd7d6b600663006c4efcbbcc7dcd621a51556324957; expires=Sun, 26-Apr-20
+        00:29:17 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"692-bC1q8/u1vTaKC+iaCVoBTFJ6dfs"
+      Function-Execution-Id:
+      - swhfg4e4ma07
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - f5ca4ca18a78ae5f0a831da1862573a7;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17539-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556324958.640993,VS0,VE259
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4cdcae6919da77d2-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkZWNyZWFzZWRfc3RhdCI6eyJuYW1lIjoiYXR0YWNrIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9zdGF0LzIvIn0sImhhdGVzX2ZsYXZvciI6eyJuYW1lIjoic3BpY3kiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2JlcnJ5LWZsYXZvci8xLyJ9LCJpZCI6MiwiaW5jcmVhc2VkX3N0YXQiOnsibmFtZSI6ImRlZmVuc2UiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3N0YXQvMy8ifSwibGlrZXNfZmxhdm9yIjp7Im5hbWUiOiJzb3VyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9iZXJyeS1mbGF2b3IvNS8ifSwibW92ZV9iYXR0bGVfc3R5bGVfcHJlZmVyZW5jZXMiOlt7ImhpZ2hfaHBfcHJlZmVyZW5jZSI6MzAsImxvd19ocF9wcmVmZXJlbmNlIjozMiwibW92ZV9iYXR0bGVfc3R5bGUiOnsibmFtZSI6ImF0dGFjayIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbW92ZS1iYXR0bGUtc3R5bGUvMS8ifX0seyJoaWdoX2hwX3ByZWZlcmVuY2UiOjIwLCJsb3dfaHBfcHJlZmVyZW5jZSI6NTgsIm1vdmVfYmF0dGxlX3N0eWxlIjp7Im5hbWUiOiJkZWZlbnNlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9tb3ZlLWJhdHRsZS1zdHlsZS8yLyJ9fSx7ImhpZ2hfaHBfcHJlZmVyZW5jZSI6NTAsImxvd19ocF9wcmVmZXJlbmNlIjoxMCwibW92ZV9iYXR0bGVfc3R5bGUiOnsibmFtZSI6InN1cHBvcnQiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL21vdmUtYmF0dGxlLXN0eWxlLzMvIn19XSwibmFtZSI6ImJvbGQiLCJuYW1lcyI6W3sibGFuZ3VhZ2UiOnsibmFtZSI6ImphLUhya3QiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzEvIn0sIm5hbWUiOiLjgZrjgbbjgajjgYQifSx7Imxhbmd1YWdlIjp7Im5hbWUiOiJrbyIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvMy8ifSwibmFtZSI6IuuMgOuLtCJ9LHsibGFuZ3VhZ2UiOnsibmFtZSI6ImZyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS81LyJ9LCJuYW1lIjoiQXNzdXLDqSJ9LHsibGFuZ3VhZ2UiOnsibmFtZSI6ImRlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS82LyJ9LCJuYW1lIjoiS8O8aG4ifSx7Imxhbmd1YWdlIjp7Im5hbWUiOiJlcyIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvNy8ifSwibmFtZSI6Ik9zYWRvIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiaXQiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzgvIn0sIm5hbWUiOiJTaWN1cmEifSx7Imxhbmd1YWdlIjp7Im5hbWUiOiJlbiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvOS8ifSwibmFtZSI6IkJvbGQifV0sInBva2VhdGhsb25fc3RhdF9jaGFuZ2VzIjpbeyJtYXhfY2hhbmdlIjotMiwicG9rZWF0aGxvbl9zdGF0Ijp7Im5hbWUiOiJzcGVlZCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZWF0aGxvbi1zdGF0LzEvIn19LHsibWF4X2NoYW5nZSI6MiwicG9rZWF0aGxvbl9zdGF0Ijp7Im5hbWUiOiJza2lsbCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZWF0aGxvbi1zdGF0LzMvIn19XX0=
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 00:29:17 GMT
+recorded_with: VCR 4.0.0
