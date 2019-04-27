@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/super-contest-effect/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 20:59:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '368'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd3f2d36270f2cf08e270a03d5b9723841556398788; expires=Sun, 26-Apr-20
+        20:59:48 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"4e4-mwAfQK+LogkTZvgX87Nk/YH2tY8"
+      Function-Execution-Id:
+      - 17bs4306yfuh
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 17d4afd8e62d059d421aa0104b04f941
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8645-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556398788.143125,VS0,VE318
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ce3b8e9c8ead3a0-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"appeal":2,"flavor_text_entries":[{"flavor_text":"Enables the user
+        to perform first in the next turn.","language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"}}],"id":1,"moves":[{"name":"agility","url":"https://pokeapi.co/api/v2/move/97/"},{"name":"quick-attack","url":"https://pokeapi.co/api/v2/move/98/"},{"name":"teleport","url":"https://pokeapi.co/api/v2/move/100/"},{"name":"double-team","url":"https://pokeapi.co/api/v2/move/104/"},{"name":"cotton-spore","url":"https://pokeapi.co/api/v2/move/178/"},{"name":"mach-punch","url":"https://pokeapi.co/api/v2/move/183/"},{"name":"extreme-speed","url":"https://pokeapi.co/api/v2/move/245/"},{"name":"tailwind","url":"https://pokeapi.co/api/v2/move/366/"},{"name":"me-first","url":"https://pokeapi.co/api/v2/move/382/"},{"name":"sucker-punch","url":"https://pokeapi.co/api/v2/move/389/"},{"name":"rock-polish","url":"https://pokeapi.co/api/v2/move/397/"},{"name":"vacuum-wave","url":"https://pokeapi.co/api/v2/move/410/"},{"name":"bullet-punch","url":"https://pokeapi.co/api/v2/move/418/"},{"name":"ice-shard","url":"https://pokeapi.co/api/v2/move/420/"},{"name":"shadow-sneak","url":"https://pokeapi.co/api/v2/move/425/"},{"name":"aqua-jet","url":"https://pokeapi.co/api/v2/move/453/"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 20:59:48 GMT
+recorded_with: VCR 4.0.0
