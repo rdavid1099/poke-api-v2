@@ -1,6 +1,6 @@
 module PokeApi
   class BerryFlavor
-    # BerryFlavor object handling all data fetched from /berry-flavor
+    # FlavorBerryMap object handling all data fetched from /berry-flavor berries
     class FlavorBerryMap
       attr_reader :berry,
                   :potency
