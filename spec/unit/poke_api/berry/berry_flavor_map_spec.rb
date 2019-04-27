@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Berry::BerryFlavorMap do
 
       expect(bfm.class).to eq(PokeApi::Berry::BerryFlavorMap)
       expect(bfm.potency).to eq(10)
-      # expect(bfm.flavor.class).to eq(PokeApi::BerryFlavor)
+      expect(bfm.flavor.class).to eq(PokeApi::BerryFlavor)
     end
   end
 end

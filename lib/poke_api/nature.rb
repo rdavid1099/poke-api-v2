@@ -20,7 +20,9 @@ module PokeApi
         decreased_stat: PokeApi::Stat,
         increased_stat: PokeApi::Stat,
         pokeathlon_stat_changes: NatureStatChange,
-        move_battle_style_preferences: MoveBattleStylePreference
+        move_battle_style_preferences: MoveBattleStylePreference,
+        likes_flavor: BerryFlavor,
+        hates_flavor: BerryFlavor
       }
     end
   end
