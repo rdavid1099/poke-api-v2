@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/characteristic/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 19:51:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d975b537d2eeadac4495ecddd8bdcd45a1556394701; expires=Sun, 26-Apr-20
+        19:51:41 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"163-B+4C3u3dcYKgDIWCrDkgN9N3qho"
+      Function-Execution-Id:
+      - olrg7oxbrsc9
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - d85a80acdb76da62cf69bc810e9acfbd;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8631-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556394702.962160,VS0,VE660
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ce355271d8177ea-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"descriptions":[{"description":"Adore manger","language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"}},{"description":"Loves
+        to eat","language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"}}],"gene_modulo":0,"highest_stat":{"name":"hp","url":"https://pokeapi.co/api/v2/stat/1/"},"id":1,"possible_values":[0,5,10,15,20,25,30]}'
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 19:51:42 GMT
+recorded_with: VCR 4.0.0
