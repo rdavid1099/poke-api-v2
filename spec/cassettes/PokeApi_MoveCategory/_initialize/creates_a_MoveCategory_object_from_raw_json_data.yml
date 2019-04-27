@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/move-category/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Apr 2019 20:02:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '494'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da6be8591a458414ce100ec37fa4930f11556395341; expires=Sun, 26-Apr-20
+        20:02:21 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"88c-tZ85lkMJCB89ai//91faV5Hvcws"
+      Function-Execution-Id:
+      - m25ij60uhga1
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 43aea835c6caa140fdfa3ff4b71bdb40
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8627-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556395341.226106,VS0,VE194
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ce364c28dfc77ea-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"descriptions":[{"description":"No damage; inflicts status ailment","language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"}}],"id":1,"moves":[{"name":"sing","url":"https://pokeapi.co/api/v2/move/47/"},{"name":"supersonic","url":"https://pokeapi.co/api/v2/move/48/"},{"name":"leech-seed","url":"https://pokeapi.co/api/v2/move/73/"},{"name":"poison-powder","url":"https://pokeapi.co/api/v2/move/77/"},{"name":"stun-spore","url":"https://pokeapi.co/api/v2/move/78/"},{"name":"sleep-powder","url":"https://pokeapi.co/api/v2/move/79/"},{"name":"thunder-wave","url":"https://pokeapi.co/api/v2/move/86/"},{"name":"toxic","url":"https://pokeapi.co/api/v2/move/92/"},{"name":"hypnosis","url":"https://pokeapi.co/api/v2/move/95/"},{"name":"confuse-ray","url":"https://pokeapi.co/api/v2/move/109/"},{"name":"glare","url":"https://pokeapi.co/api/v2/move/137/"},{"name":"poison-gas","url":"https://pokeapi.co/api/v2/move/139/"},{"name":"lovely-kiss","url":"https://pokeapi.co/api/v2/move/142/"},{"name":"spore","url":"https://pokeapi.co/api/v2/move/147/"},{"name":"nightmare","url":"https://pokeapi.co/api/v2/move/171/"},{"name":"sweet-kiss","url":"https://pokeapi.co/api/v2/move/186/"},{"name":"foresight","url":"https://pokeapi.co/api/v2/move/193/"},{"name":"perish-song","url":"https://pokeapi.co/api/v2/move/195/"},{"name":"attract","url":"https://pokeapi.co/api/v2/move/213/"},{"name":"torment","url":"https://pokeapi.co/api/v2/move/259/"},{"name":"will-o-wisp","url":"https://pokeapi.co/api/v2/move/261/"},{"name":"ingrain","url":"https://pokeapi.co/api/v2/move/275/"},{"name":"yawn","url":"https://pokeapi.co/api/v2/move/281/"},{"name":"teeter-dance","url":"https://pokeapi.co/api/v2/move/298/"},{"name":"odor-sleuth","url":"https://pokeapi.co/api/v2/move/316/"},{"name":"grass-whistle","url":"https://pokeapi.co/api/v2/move/320/"},{"name":"miracle-eye","url":"https://pokeapi.co/api/v2/move/357/"},{"name":"embargo","url":"https://pokeapi.co/api/v2/move/373/"},{"name":"heal-block","url":"https://pokeapi.co/api/v2/move/377/"},{"name":"dark-void","url":"https://pokeapi.co/api/v2/move/464/"},{"name":"telekinesis","url":"https://pokeapi.co/api/v2/move/477/"}],"name":"ailment"}'
+    http_version: 
+  recorded_at: Sat, 27 Apr 2019 20:02:21 GMT
+recorded_with: VCR 4.0.0

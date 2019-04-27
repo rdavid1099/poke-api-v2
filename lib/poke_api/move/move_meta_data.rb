@@ -17,7 +17,7 @@ module PokeApi
 
       def initialize(data)
         # @ailment = MoveAilment.new(data[:ailment])
-        # @category = MoveCategory.new(data[:category])
+        @category = MoveCategory.new(data[:category])
         @min_hits = data[:min_hits]
         @max_hits = data[:max_hits]
         @min_turns = data[:min_turns]
