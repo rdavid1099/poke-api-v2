@@ -12,7 +12,7 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      {}
+      { berries: FlavorBerryMap }
     end
   end
 end
