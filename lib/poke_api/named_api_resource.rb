@@ -15,6 +15,8 @@ module PokeApi
     private
 
     def assign_data(data)
+      return unless data
+
       data.each_key do |key|
         data_chunk = data[key]
         if (klass = endpoint_assignment(key: key, custom_endpoint_object: custom_endpoint_object))

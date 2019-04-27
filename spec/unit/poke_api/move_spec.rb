@@ -25,7 +25,7 @@ RSpec.describe PokeApi::Move, :vcr do
       expect(move.meta.class).to eq(PokeApi::Move::MoveMetaData)
       expect(move.past_values).to eq([])
       expect(move.stat_changes).to eq([])
-      # expect(move.super_contest_effect.class).to eq(PokeApi::SuperContestEffect)
+      expect(move.super_contest_effect.class).to eq(PokeApi::SuperContestEffect)
       expect(move.target.class).to eq(PokeApi::MoveTarget)
       expect(move.type.class).to eq(PokeApi::Type)
     end

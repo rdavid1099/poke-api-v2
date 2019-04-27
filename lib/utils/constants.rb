@@ -29,6 +29,7 @@ ENDPOINTS = {
   pokemon: 'pokemon/',
   region: 'region/',
   stat: 'stat/',
+  super_contest_effect: 'super-contest-effect/',
   type: 'type/',
   version: 'version/',
   version_group: 'version-group/'
@@ -83,6 +84,7 @@ ENDPOINT_OBJECTS = {
   pokemon: PokeApi::Pokemon,
   region: PokeApi::Region,
   stat: PokeApi::Stat,
+  super_contest_effect: PokeApi::SuperContestEffect,
   type: PokeApi::Type,
   values: PokeApi::EncounterConditionValue,
   version: PokeApi::Version,
