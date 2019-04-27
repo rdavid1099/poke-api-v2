@@ -6,7 +6,7 @@ module PokeApi
                   :potency
 
       def initialize(data)
-        # @flavor  = PokeApi::BerryFlavor.new(data[:flavor])
+        @flavor  = PokeApi::BerryFlavor.new(data[:flavor])
         @potency = data[:potency]
       end
     end
