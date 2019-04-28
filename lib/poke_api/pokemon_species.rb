@@ -19,6 +19,7 @@ module PokeApi
                 :habitat,
                 :generation,
                 :names,
+                :pal_park_encounters,
                 :flavor_text_entries,
                 :form_descriptions,
                 :genera,
@@ -31,7 +32,15 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      {}
+      {
+        pokedex_numbers: PokemonSpeciesDexEntry,
+        evolves_from_species: PokemonSpecies,
+        pal_park_encounters: PalParkEncounterArea,
+        flavor_text_entries: Common::FlavorText,
+        form_descriptions: Common::Description,
+        genera: Genus,
+        varieties: PokemonSpeciesVariety
+      }
     end
   end
 end
