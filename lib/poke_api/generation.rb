@@ -12,5 +12,11 @@ module PokeApi
     def initialize(data)
       assign_data(data)
     end
+
+    private
+
+    def custom_endpoint_object
+      { main_region: Region }
+    end
   end
 end
