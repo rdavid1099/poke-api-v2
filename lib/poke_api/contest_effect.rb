@@ -9,5 +9,14 @@ module PokeApi
     def initialize(data)
       assign_data(data)
     end
+
+    private
+
+    def custom_endpoint_object
+      {
+        effect_entries: Common::Effect,
+        flavor_text_entries: Common::FlavorText
+      }
+    end
   end
 end
