@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/contest-type/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Apr 2019 20:21:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1efbd6087766f700f8102eaba2f8f4f71556482895; expires=Mon, 27-Apr-20
+        20:21:35 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"144-+PWFTjTC1VK+1WGCkzpeSgvMT3U"
+      Function-Execution-Id:
+      - mjmcbhkebli1
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 2fc327d7d773a9891172ad83c0d232b6
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8633-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556482896.937628,VS0,VE811
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4cebbe538b88d340-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"berry_flavor":{"name":"spicy","url":"https://pokeapi.co/api/v2/berry-flavor/1/"},"id":1,"name":"cool","names":[{"color":"Red","language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"Cool"},{"color":"Rouge","language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"Sang-froid"}]}'
+    http_version: 
+  recorded_at: Sun, 28 Apr 2019 20:21:36 GMT
+recorded_with: VCR 4.0.0

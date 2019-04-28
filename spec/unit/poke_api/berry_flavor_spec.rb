@@ -9,7 +9,7 @@ RSpec.describe PokeApi::BerryFlavor, :vcr do
       expect(berry_flavor.name).to eq('spicy')
       expect(berry_flavor.names.first.class).to eq(PokeApi::Common::Name)
       expect(berry_flavor.berries.first.class).to eq(PokeApi::BerryFlavor::FlavorBerryMap)
-      # expect(berry_flavor.contest_type.class).to eq(PokeApi::ContestType)
+      expect(berry_flavor.contest_type.class).to eq(PokeApi::ContestType)
     end
   end
 end
