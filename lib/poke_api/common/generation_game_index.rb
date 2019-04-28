@@ -7,7 +7,7 @@ module PokeApi
 
       def initialize(data)
         @game_index = data[:game_index]
-        # @generation = Generation.new(data[:generation])
+        @generation = Generation.new(data[:generation])
       end
     end
   end
