@@ -11,7 +11,7 @@ RSpec.describe PokeApi::Generation, :vcr do
       expect(generation.abilities).to eq([])
       expect(generation.main_region.class).to eq(PokeApi::Region)
       expect(generation.moves.first.class).to eq(PokeApi::Move)
-      # expect(generation.pokemon_species.first.class).to eq(PokeApi::PokemonSpecies)
+      expect(generation.pokemon_species.first.class).to eq(PokeApi::PokemonSpecies)
       expect(generation.types.first.class).to eq(PokeApi::Type)
       expect(generation.version_groups.first.class).to eq(PokeApi::VersionGroup)
     end

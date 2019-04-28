@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Pokedex::PokemonEntry do
 
       expect(pokemon_entry.class).to eq(PokeApi::Pokedex::PokemonEntry)
       expect(pokemon_entry.entry_number).to eq(1)
-      # expect(pokemon_entry.pokemon_species.class).to eq(PokeApi::PokemonSpecies)
+      expect(pokemon_entry.pokemon_species.class).to eq(PokeApi::PokemonSpecies)
     end
   end
 end

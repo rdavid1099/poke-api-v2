@@ -19,7 +19,7 @@ module PokeApi
 
       def initialize(data)
         @is_baby = data[:is_baby]
-        # @species = PokemonSpecies.new(data[:species])
+        @species = PokemonSpecies.new(data[:species])
         @evolution_details = assign_list(data: data[:evolution_details], klass: EvolutionDetail)
         @evolves_to = assign_list(data: data[:evolves_to], klass: ChainLink)
       end

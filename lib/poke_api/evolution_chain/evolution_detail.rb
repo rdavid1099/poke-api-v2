@@ -37,11 +37,11 @@ module PokeApi
         @min_beauty = data[:min_beauty]
         @min_affection = data[:min_affection]
         @needs_overworld_rain = data[:needs_overworld_rain]
-        # @party_species = try_to_assign(data: data[:party_species], klass: PokemonSpecies)
+        @party_species = try_to_assign(data: data[:party_species], klass: PokemonSpecies)
         @party_type = try_to_assign(data: data[:party_type], klass: Type)
         @relative_physical_stats = data[:relative_physical_stats]
         @time_of_day = data[:time_of_day]
-        # @trade_species = try_to_assign(data: data[:trade_species], klass: PokemonSpecies)
+        @trade_species = try_to_assign(data: data[:trade_species], klass: PokemonSpecies)
         @turn_upside_down = data[:turn_upside_down]
       end
       # rubocop:enable Metrics/AbcSize, Metrics/MethodLength

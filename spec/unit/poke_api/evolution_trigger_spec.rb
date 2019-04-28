@@ -8,7 +8,7 @@ RSpec.describe PokeApi::EvolutionTrigger, :vcr do
       expect(et.id).to eq(1)
       expect(et.name).to eq('level-up')
       expect(et.names.first.class).to eq(PokeApi::Common::Name)
-      # expect(et.pokemon_species.first.class).to eq(PokeApi::PokemonSpecies)
+      expect(et.pokemon_species.first.class).to eq(PokeApi::PokemonSpecies)
     end
   end
 end
