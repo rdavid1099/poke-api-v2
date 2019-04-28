@@ -8,7 +8,7 @@ RSpec.describe PokeApi::Ability, :vcr do
       expect(ability.id).to eq(1)
       expect(ability.name).to eq('stench')
       expect(ability.is_main_series).to eq(true)
-      # expect(ability.generation.class).to eq(PokeApi::Generation)
+      expect(ability.generation.class).to eq(PokeApi::Generation)
       expect(ability.names.first.class).to eq(PokeApi::Common::Name)
       expect(ability.effect_entries.first.class).to eq(PokeApi::Common::VerboseEffect)
       expect(ability.effect_changes.first.class).to eq(PokeApi::Ability::AbilityEffectChange)
