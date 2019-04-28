@@ -10,7 +10,7 @@ RSpec.describe PokeApi::Type, :vcr do
       expect(type.damage_relations.class).to eq(PokeApi::Type::TypeRelations)
       expect(type.game_indices.first.class).to eq(PokeApi::Common::GenerationGameIndex)
       # expect(type.generation.class).to eq(PokeApi::Generation)
-      # expect(type.move_damage_class.class).to eq(PokeApi::MoveDamageClass)
+      expect(type.move_damage_class.class).to eq(PokeApi::MoveDamageClass)
       expect(type.names.first.class).to eq(PokeApi::Common::Name)
       expect(type.pokemon.first.class).to eq(PokeApi::Type::TypePokemon)
       expect(type.move).to eq(nil)
