@@ -14,7 +14,7 @@ RSpec.describe PokeApi::Move, :vcr do
       expect(move.priority).to eq(0)
       expect(move.power).to eq(40)
       expect(move.contest_combos.class).to eq(PokeApi::Move::ContestComboSets)
-      # expect(move.contest_type).to eq(PokeApi::ContestType)
+      expect(move.contest_type.class).to eq(PokeApi::ContestType)
       expect(move.contest_effect.class).to eq(PokeApi::ContestEffect)
       expect(move.damage_class.class).to eq(PokeApi::MoveDamageClass)
       expect(move.effect_entries.first.class).to eq(PokeApi::Common::VerboseEffect)
