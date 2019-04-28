@@ -6,6 +6,10 @@ path = __dir__
 require "#{path}/../utils/assignment_helpers"
 require "#{path}/../poke_api/named_api_resource"
 
+require "#{path}/../poke_api/ability"
+require "#{path}/../poke_api/ability/ability_effect_change"
+require "#{path}/../poke_api/ability/ability_flavor_text"
+require "#{path}/../poke_api/ability/ability_pokemon"
 require "#{path}/../poke_api/berry"
 require "#{path}/../poke_api/berry/berry_flavor_map"
 require "#{path}/../poke_api/berry_firmness"

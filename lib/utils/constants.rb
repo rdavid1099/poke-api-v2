@@ -1,5 +1,6 @@
 BASE_URI = 'https://pokeapi.co/api/v2/'.freeze
 ENDPOINTS = {
+  ability: 'ability/',
   berry: 'berry/',
   berry_firmness: 'berry-firmness/',
   berry_flavor: 'berry-flavor/',
@@ -35,6 +36,7 @@ ENDPOINTS = {
   version_group: 'version-group/'
 }.freeze
 ENDPOINT_OBJECTS = {
+  ability: PokeApi::Ability,
   attributes: PokeApi::ItemAttribute,
   berry: PokeApi::Berry,
   berry_firmness: PokeApi::BerryFirmness,
