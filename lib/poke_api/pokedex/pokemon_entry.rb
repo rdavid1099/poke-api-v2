@@ -7,7 +7,7 @@ module PokeApi
 
       def initialize(data)
         @entry_number = data[:entry_number]
-        # @pokemon_species = PokeApi::PokemonSpecies.new(data[:pokemon_species])
+        @pokemon_species = PokemonSpecies.new(data[:pokemon_species])
       end
     end
   end

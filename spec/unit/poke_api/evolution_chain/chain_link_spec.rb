@@ -48,7 +48,7 @@ RSpec.describe PokeApi::EvolutionChain::ChainLink do
 
       expect(link.class).to eq(PokeApi::EvolutionChain::ChainLink)
       expect(link.is_baby).to eq(false)
-      # expect(link.species.class).to eq(PokeApi::PokemonSpecies)
+      expect(link.species.class).to eq(PokeApi::PokemonSpecies)
       expect(link.evolution_details.first).to eq(nil)
       expect(link.evolves_to.first.class).to eq(PokeApi::EvolutionChain::ChainLink)
       expect(link.evolves_to.first.evolution_details.first.class).to eq(PokeApi::EvolutionChain::EvolutionDetail)
