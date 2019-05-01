@@ -18,6 +18,7 @@ ENDPOINTS = {
   item_category: 'item-category/',
   item_fling_effect: 'item-fling-effect/',
   item_pocket: 'item-pocket/',
+  language: 'language/',
   location_area: 'location-area/',
   location: 'location/',
   machine: 'machine/',
