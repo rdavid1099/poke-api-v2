@@ -9,12 +9,12 @@ RSpec.describe PokeApi::PokemonSpecies::PalParkEncounterArea do
           url: "https://pokeapi.co/api/v2/pal-park-area/1/"
         }
       }
-      pokemon_entry = PokeApi::PokemonSpecies::PalParkEncounterArea.new(raw_data)
+      ppea = PokeApi::PokemonSpecies::PalParkEncounterArea.new(raw_data)
 
-      expect(pokemon_entry.class).to eq(PokeApi::PokemonSpecies::PalParkEncounterArea)
-      expect(pokemon_entry.base_score).to eq(10)
-      expect(pokemon_entry.rate).to eq(45)
-      # expect(pokemon_entry.area.class).to eq(PokeApi::PalParkArea)
+      expect(ppea.class).to eq(PokeApi::PokemonSpecies::PalParkEncounterArea)
+      expect(ppea.base_score).to eq(10)
+      expect(ppea.rate).to eq(45)
+      # expect(ppea.area.class).to eq(PokeApi::PalParkArea)
     end
   end
 end

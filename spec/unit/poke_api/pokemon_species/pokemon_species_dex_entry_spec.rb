@@ -8,11 +8,11 @@ RSpec.describe PokeApi::PokemonSpecies::PokemonSpeciesDexEntry do
           url: "https://pokeapi.co/api/v2/pokedex/12/"
         }
       }
-      pokemon_entry = PokeApi::PokemonSpecies::PokemonSpeciesDexEntry.new(raw_data)
+      psde = PokeApi::PokemonSpecies::PokemonSpeciesDexEntry.new(raw_data)
 
-      expect(pokemon_entry.class).to eq(PokeApi::PokemonSpecies::PokemonSpeciesDexEntry)
-      expect(pokemon_entry.entry_number).to eq(45)
-      expect(pokemon_entry.pokedex.class).to eq(PokeApi::Pokedex)
+      expect(psde.class).to eq(PokeApi::PokemonSpecies::PokemonSpeciesDexEntry)
+      expect(psde.entry_number).to eq(45)
+      expect(psde.pokedex.class).to eq(PokeApi::Pokedex)
     end
   end
 end
