@@ -33,6 +33,7 @@ module PokeApi
 
     def custom_endpoint_object
       {
+        color: PokemonColor,
         pokedex_numbers: PokemonSpeciesDexEntry,
         evolves_from_species: PokemonSpecies,
         pal_park_encounters: PalParkEncounterArea,
