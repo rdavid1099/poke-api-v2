@@ -40,6 +40,7 @@ module PokeApi
         form_descriptions: Common::Description,
         genera: Genus,
         habitat: PokemonHabitat,
+        shape: PokemonShape,
         varieties: PokemonSpeciesVariety
       }
     end

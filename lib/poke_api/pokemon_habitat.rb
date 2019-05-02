@@ -1,5 +1,5 @@
 module PokeApi
-  # PokemonHabitat object handling all data fetched from /pal-park-area
+  # PokemonHabitat object handling all data fetched from /pokemon-habitat
   class PokemonHabitat < NamedApiResource
     attr_reader :names,
                 :pokemon_species
