@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/pokemon-shape/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 May 2019 19:41:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '549'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d28758bf0f5ad5c7aeff9b18ac2652d261556826080; expires=Fri, 01-May-20
+        19:41:20 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"c76-59upKb0u0TRxpMImi0Pj8XEuflg"
+      Function-Execution-Id:
+      - x1ojp7g4a14r
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 53b0d7deb3a6783b300eacfa6651f290
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-msp20821-MSP
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556826080.085854,VS0,VE1447
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d0c78d86c30c63b-MSP
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJhd2Vzb21lX25hbWVzIjpbeyJhd2Vzb21lX25hbWUiOiJQb21hY2VvdXMiLCJsYW5ndWFnZSI6eyJuYW1lIjoiZW4iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzkvIn19LHsiYXdlc29tZV9uYW1lIjoiUG9tYWPDqSIsImxhbmd1YWdlIjp7Im5hbWUiOiJmciIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvbGFuZ3VhZ2UvNS8ifX1dLCJpZCI6MSwibmFtZSI6ImJhbGwiLCJuYW1lcyI6W3sibGFuZ3VhZ2UiOnsibmFtZSI6ImVuIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS85LyJ9LCJuYW1lIjoiQmFsbCJ9LHsibGFuZ3VhZ2UiOnsibmFtZSI6ImZyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS81LyJ9LCJuYW1lIjoiQmFsbGUifV0sInBva2Vtb25fc3BlY2llcyI6W3sibmFtZSI6InNoZWxsZGVyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvOTAvIn0seyJuYW1lIjoiZ2FzdGx5IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvOTIvIn0seyJuYW1lIjoidm9sdG9yYiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzEwMC8ifSx7Im5hbWUiOiJrb2ZmaW5nIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMTA5LyJ9LHsibmFtZSI6ImRpdHRvIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMTMyLyJ9LHsibmFtZSI6ImNsb3lzdGVyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvOTEvIn0seyJuYW1lIjoiZWxlY3Ryb2RlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMTAxLyJ9LHsibmFtZSI6InN1bmtlcm4iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8xOTEvIn0seyJuYW1lIjoibWlzZHJlYXZ1cyIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzIwMC8ifSx7Im5hbWUiOiJ1bm93biIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzIwMS8ifSx7Im5hbWUiOiJwaW5lY28iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8yMDQvIn0seyJuYW1lIjoiZm9ycmV0cmVzcyIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzIwNS8ifSx7Im5hbWUiOiJzaWxjb29uIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMjY2LyJ9LHsibmFtZSI6ImNhc2Nvb24iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8yNjgvIn0seyJuYW1lIjoibHVuYXRvbmUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8zMzcvIn0seyJuYW1lIjoic29scm9jayIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzMzOC8ifSx7Im5hbWUiOiJjYXN0Zm9ybSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzM1MS8ifSx7Im5hbWUiOiJzaHVwcGV0IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMzUzLyJ9LHsibmFtZSI6ImNsYW1wZXJsIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMzY2LyJ9LHsibmFtZSI6ImdsYWxpZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzM2Mi8ifSx7Im5hbWUiOiJicm9uem9yIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNDM2LyJ9LHsibmFtZSI6InJvdG9tIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNDc5LyJ9LHsibmFtZSI6ImNvdHRvbmVlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNTQ2LyJ9LHsibmFtZSI6InNvbG9zaXMiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy81NzcvIn0seyJuYW1lIjoiZmVycm9zZWVkIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNTk3LyJ9LHsibmFtZSI6ImNyeW9nb25hbCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzYxNS8ifSx7Im5hbWUiOiJzaGVsbWV0IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNjE2LyJ9LHsibmFtZSI6ImR1b3Npb24iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy81NzgvIn0seyJuYW1lIjoiY2FyYmluayIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzcwMy8ifSx7Im5hbWUiOiJrbGVma2kiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83MDcvIn0seyJuYW1lIjoicHVtcGthYm9vIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNzEwLyJ9LHsibmFtZSI6ImNvbWZleSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzc2NC8ifSx7Im5hbWUiOiJtaW5pb3IiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83NzQvIn0seyJuYW1lIjoiY29zbW9nIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNzg5LyJ9LHsibmFtZSI6Im1pc21hZ2l1cyIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzQyOS8ifSx7Im5hbWUiOiJ3aGlybGlwZWRlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNTQ0LyJ9LHsibmFtZSI6ImNvc21vZW0iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83OTAvIn1dfQ==
+    http_version: 
+  recorded_at: Thu, 02 May 2019 19:41:28 GMT
+recorded_with: VCR 4.0.0
