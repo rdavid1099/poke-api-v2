@@ -7,6 +7,8 @@ RSpec.describe PokeApi::Gender, :vcr do
       expect(gender.class).to eq(PokeApi::Gender)
       expect(gender.id).to eq(1)
       expect(gender.name).to eq('female')
+      expect(gender.pokemon_species_details.first.class).to eq(PokeApi::Gender::PokemonSpeciesGender)
+      expect(gender.required_for_evolution.first.class).to eq(PokeApi::PokemonSpecies)
     end
   end
 end
