@@ -19,7 +19,7 @@ RSpec.describe PokeApi::PokemonSpecies, :vcr do
       # expect(pokemon_species.growth_rate.class).to eq(PokeApi::GrowthRate)
       expect(pokemon_species.pokedex_numbers.first.class).to eq(PokeApi::PokemonSpecies::PokemonSpeciesDexEntry)
       # expect(pokemon_species.egg_groups.first.class).to eq(PokeApi::EggGroup)
-      # expect(pokemon_species.color.class).to eq(PokeApi::PokemonColor)
+      expect(pokemon_species.color.class).to eq(PokeApi::PokemonColor)
       expect(pokemon_species.shape.class).to eq(PokeApi::PokemonShape)
       expect(pokemon_species.evolves_from_species.class).to eq(PokeApi::PokemonSpecies)
       expect(pokemon_species.evolution_chain.class).to eq(PokeApi::EvolutionChain)
