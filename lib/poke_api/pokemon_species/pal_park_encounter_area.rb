@@ -10,7 +10,7 @@ module PokeApi
       def initialize(data)
         @base_score = data[:base_score]
         @rate = data[:rate]
-        # @area = PalParkArea.new(data[:area])
+        @area = PalParkArea.new(data[:area])
       end
     end
   end

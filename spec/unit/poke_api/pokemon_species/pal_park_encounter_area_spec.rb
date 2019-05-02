@@ -14,7 +14,7 @@ RSpec.describe PokeApi::PokemonSpecies::PalParkEncounterArea do
       expect(ppea.class).to eq(PokeApi::PokemonSpecies::PalParkEncounterArea)
       expect(ppea.base_score).to eq(10)
       expect(ppea.rate).to eq(45)
-      # expect(ppea.area.class).to eq(PokeApi::PalParkArea)
+      expect(ppea.area.class).to eq(PokeApi::PalParkArea)
     end
   end
 end
