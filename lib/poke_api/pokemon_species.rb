@@ -39,6 +39,7 @@ module PokeApi
         flavor_text_entries: Common::FlavorText,
         form_descriptions: Common::Description,
         genera: Genus,
+        habitat: PokemonHabitat,
         varieties: PokemonSpeciesVariety
       }
     end

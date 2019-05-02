@@ -23,7 +23,7 @@ RSpec.describe PokeApi::PokemonSpecies, :vcr do
       # expect(pokemon_species.shape.class).to eq(PokeApi::PokemonShape)
       expect(pokemon_species.evolves_from_species.class).to eq(PokeApi::PokemonSpecies)
       expect(pokemon_species.evolution_chain.class).to eq(PokeApi::EvolutionChain)
-      # expect(pokemon_species.habitat.class).to eq(PokeApi::PokemonHabitat)
+      expect(pokemon_species.habitat).to eq(nil)
       expect(pokemon_species.generation.class).to eq(PokeApi::Generation)
       expect(pokemon_species.pal_park_encounters.first.class).to eq(PokeApi::PokemonSpecies::PalParkEncounterArea)
       expect(pokemon_species.flavor_text_entries.first.class).to eq(PokeApi::Common::FlavorText)

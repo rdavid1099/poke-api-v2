@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/pokemon-habitat/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 May 2019 16:06:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '417'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=daca5415f4f462e6a6f501fb871862d4a1556813183; expires=Fri, 01-May-20
+        16:06:23 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"93f-iXb+pntN7G8ha+m1a5/JaCkWX9c"
+      Function-Execution-Id:
+      - 6k2ipo0rpgt8
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 2a74ff1d592291a4fbc61593dba542e9
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-msp20826-MSP
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556813183.092437,VS0,VE467
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d0b3dfa397dc637-MSP
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"name":"cave","names":[{"language":{"name":"fr","url":"https://pokeapi.co/api/v2/language/5/"},"name":"grottes"},{"language":{"name":"en","url":"https://pokeapi.co/api/v2/language/9/"},"name":"cave"}],"pokemon_species":[{"name":"zubat","url":"https://pokeapi.co/api/v2/pokemon-species/41/"},{"name":"diglett","url":"https://pokeapi.co/api/v2/pokemon-species/50/"},{"name":"golbat","url":"https://pokeapi.co/api/v2/pokemon-species/42/"},{"name":"dugtrio","url":"https://pokeapi.co/api/v2/pokemon-species/51/"},{"name":"gastly","url":"https://pokeapi.co/api/v2/pokemon-species/92/"},{"name":"onix","url":"https://pokeapi.co/api/v2/pokemon-species/95/"},{"name":"haunter","url":"https://pokeapi.co/api/v2/pokemon-species/93/"},{"name":"gengar","url":"https://pokeapi.co/api/v2/pokemon-species/94/"},{"name":"misdreavus","url":"https://pokeapi.co/api/v2/pokemon-species/200/"},{"name":"dunsparce","url":"https://pokeapi.co/api/v2/pokemon-species/206/"},{"name":"swinub","url":"https://pokeapi.co/api/v2/pokemon-species/220/"},{"name":"crobat","url":"https://pokeapi.co/api/v2/pokemon-species/169/"},{"name":"wobbuffet","url":"https://pokeapi.co/api/v2/pokemon-species/202/"},{"name":"steelix","url":"https://pokeapi.co/api/v2/pokemon-species/208/"},{"name":"piloswine","url":"https://pokeapi.co/api/v2/pokemon-species/221/"},{"name":"whismur","url":"https://pokeapi.co/api/v2/pokemon-species/293/"},{"name":"nosepass","url":"https://pokeapi.co/api/v2/pokemon-species/299/"},{"name":"sableye","url":"https://pokeapi.co/api/v2/pokemon-species/302/"},{"name":"mawile","url":"https://pokeapi.co/api/v2/pokemon-species/303/"},{"name":"loudred","url":"https://pokeapi.co/api/v2/pokemon-species/294/"},{"name":"exploud","url":"https://pokeapi.co/api/v2/pokemon-species/295/"},{"name":"lunatone","url":"https://pokeapi.co/api/v2/pokemon-species/337/"},{"name":"solrock","url":"https://pokeapi.co/api/v2/pokemon-species/338/"},{"name":"wynaut","url":"https://pokeapi.co/api/v2/pokemon-species/360/"},{"name":"snorunt","url":"https://pokeapi.co/api/v2/pokemon-species/361/"},{"name":"regirock","url":"https://pokeapi.co/api/v2/pokemon-species/377/"},{"name":"regice","url":"https://pokeapi.co/api/v2/pokemon-species/378/"},{"name":"registeel","url":"https://pokeapi.co/api/v2/pokemon-species/379/"},{"name":"glalie","url":"https://pokeapi.co/api/v2/pokemon-species/362/"}]}'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 16:06:23 GMT
+recorded_with: VCR 4.0.0
