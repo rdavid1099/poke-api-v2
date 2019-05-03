@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/pokemon-color/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 May 2019 19:16:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '620'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df58df2a3b1966a89611ac21d82e968941556910985; expires=Sat, 02-May-20
+        19:16:25 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"d97-TTq2/fWY5h0xF52soMYDvm/E2b4"
+      Function-Execution-Id:
+      - 5n13uiraezxf
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - e6c82bcf40a1e190def97dd4cd7125fd
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bur17528-BUR
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556910985.440525,VS0,VE412
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d1491baee0e98c3-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MSwibmFtZSI6ImJsYWNrIiwibmFtZXMiOlt7Imxhbmd1YWdlIjp7Im5hbWUiOiJqYS1Icmt0IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9sYW5ndWFnZS8xLyJ9LCJuYW1lIjoi6buS44GEIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiZnIiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzUvIn0sIm5hbWUiOiJOb2lyIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiZGUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzYvIn0sIm5hbWUiOiJTY2h3YXJ6In0seyJsYW5ndWFnZSI6eyJuYW1lIjoiaXQiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzgvIn0sIm5hbWUiOiJOZXJvIn0seyJsYW5ndWFnZSI6eyJuYW1lIjoiZW4iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL2xhbmd1YWdlLzkvIn0sIm5hbWUiOiJCbGFjayJ9XSwicG9rZW1vbl9zcGVjaWVzIjpbeyJuYW1lIjoic25vcmxheCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzE0My8ifSx7Im5hbWUiOiJtdXJrcm93IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMTk4LyJ9LHsibmFtZSI6InVub3duIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMjAxLyJ9LHsibmFtZSI6InNuZWFzZWwiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8yMTUvIn0seyJuYW1lIjoiaG91bmRvdXIiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8yMjgvIn0seyJuYW1lIjoidW1icmVvbiIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzE5Ny8ifSx7Im5hbWUiOiJob3VuZG9vbSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzIyOS8ifSx7Im5hbWUiOiJtYXdpbGUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8zMDMvIn0seyJuYW1lIjoic3BvaW5rIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMzI1LyJ9LHsibmFtZSI6InNldmlwZXIiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8zMzYvIn0seyJuYW1lIjoic2h1cHBldCIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzM1My8ifSx7Im5hbWUiOiJkdXNrdWxsIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvMzU1LyJ9LHsibmFtZSI6ImNsYXlkb2wiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy8zNDQvIn0seyJuYW1lIjoiYmFuZXR0ZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzM1NC8ifSx7Im5hbWUiOiJkdXNjbG9wcyIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzM1Ni8ifSx7Im5hbWUiOiJjaGF0b3QiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy80NDEvIn0seyJuYW1lIjoibXVuY2hsYXgiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy80NDYvIn0seyJuYW1lIjoiaG9uY2hrcm93IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNDMwLyJ9LHsibmFtZSI6IndlYXZpbGUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy80NjEvIn0seyJuYW1lIjoiZ2lyYXRpbmEiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy80ODcvIn0seyJuYW1lIjoiZGFya3JhaSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzQ5MS8ifSx7Im5hbWUiOiJibGl0emxlIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNTIyLyJ9LHsibmFtZSI6ImR1c2tub2lyIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNDc3LyJ9LHsibmFtZSI6InNpZ2lseXBoIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNTYxLyJ9LHsibmFtZSI6InlhbWFzayIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzU2Mi8ifSx7Im5hbWUiOiJsYW1wZW50IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNjA4LyJ9LHsibmFtZSI6ImNoYW5kZWx1cmUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy82MDkvIn0seyJuYW1lIjoiemVrcm9tIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNjQ0LyJ9LHsibmFtZSI6InNjYXR0ZXJidWciLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy82NjQvIn0seyJuYW1lIjoic3Bld3BhIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNjY1LyJ9LHsibmFtZSI6InBpa2lwZWsiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83MzEvIn0seyJuYW1lIjoic2FsYW5kaXQiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83NTcvIn0seyJuYW1lIjoicHl1a3VtdWt1IiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNzcxLyJ9LHsibmFtZSI6Inh1cmtpdHJlZSIsInVybCI6Imh0dHBzOi8vcG9rZWFwaS5jby9hcGkvdjIvcG9rZW1vbi1zcGVjaWVzLzc5Ni8ifSx7Im5hbWUiOiJ0b3VjYW5ub24iLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83MzMvIn0seyJuYW1lIjoic2FsYXp6bGUiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83NTgvIn0seyJuYW1lIjoiZ3V6emxvcmQiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy83OTkvIn0seyJuYW1lIjoibmVjcm96bWEiLCJ1cmwiOiJodHRwczovL3Bva2VhcGkuY28vYXBpL3YyL3Bva2Vtb24tc3BlY2llcy84MDAvIn0seyJuYW1lIjoiemVic3RyaWthIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNTIzLyJ9LHsibmFtZSI6InRydW1iZWFrIiwidXJsIjoiaHR0cHM6Ly9wb2tlYXBpLmNvL2FwaS92Mi9wb2tlbW9uLXNwZWNpZXMvNzMyLyJ9XX0=
+    http_version: 
+  recorded_at: Fri, 03 May 2019 19:16:25 GMT
+recorded_with: VCR 4.0.0
