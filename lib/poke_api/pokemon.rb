@@ -27,9 +27,8 @@ module PokeApi
       {
         abilities: PokemonAbility,
         forms: PokemonForm,
-        game_indcies: Common::VersionGameIndex,
+        game_indices: Common::VersionGameIndex,
         held_items: PokemonHeldItem,
-        location_area_encounters: LocationAreaEncounter,
         moves: PokemonMove,
         species: PokemonSpecies,
         sprites: PokemonSprites,
