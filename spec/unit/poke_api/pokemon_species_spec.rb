@@ -16,7 +16,7 @@ RSpec.describe PokeApi::PokemonSpecies, :vcr do
       expect(pokemon_species.hatch_counter).to eq(15)
       expect(pokemon_species.has_gender_differences).to eq(false)
       expect(pokemon_species.forms_switchable).to eq(false)
-      # expect(pokemon_species.growth_rate.class).to eq(PokeApi::GrowthRate)
+      expect(pokemon_species.growth_rate.class).to eq(PokeApi::GrowthRate)
       expect(pokemon_species.pokedex_numbers.first.class).to eq(PokeApi::PokemonSpecies::PokemonSpeciesDexEntry)
       expect(pokemon_species.egg_groups.first.class).to eq(PokeApi::EggGroup)
       expect(pokemon_species.color.class).to eq(PokeApi::PokemonColor)
