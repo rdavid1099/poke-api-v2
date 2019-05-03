@@ -13,7 +13,7 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      {}
+      { levels: GrowthRateExperienceLevel }
     end
   end
 end
