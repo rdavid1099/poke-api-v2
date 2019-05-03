@@ -9,7 +9,9 @@ module PokeApi
                 :form_name,
                 :pokemon,
                 :sprites,
-                :version_group
+                :version_group,
+                :names,
+                :form_names
 
     def initialize(data)
       assign_data(data)
@@ -18,7 +20,10 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      { sprites: PokemonFormSprites }
+      {
+        sprites: PokemonFormSprites,
+        form_names: Common::Name
+      }
     end
   end
 end
