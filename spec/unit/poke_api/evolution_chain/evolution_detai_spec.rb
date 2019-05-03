@@ -53,7 +53,7 @@ RSpec.describe PokeApi::EvolutionChain::EvolutionDetail do
       expect(evolution_detail.min_beauty).to eq(nil)
       expect(evolution_detail.min_affection).to eq(nil)
       expect(evolution_detail.needs_overworld_rain).to eq(false)
-      # expect(evolution_detail.party_species.class).to eq(PokeApi::PokemonSpecies)
+      expect(evolution_detail.party_species.class).to eq(PokeApi::PokemonSpecies)
       expect(evolution_detail.party_type).to eq(nil)
       expect(evolution_detail.relative_physical_stats).to eq(nil)
       expect(evolution_detail.time_of_day).to eq('')

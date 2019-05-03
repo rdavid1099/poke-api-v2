@@ -12,7 +12,7 @@ RSpec.describe PokeApi::Common::GenerationGameIndex do
 
       expect(game_index.class).to eq(PokeApi::Common::GenerationGameIndex)
       expect(game_index.game_index).to eq(7)
-      # expect(game_index.generation.class).to eq(PokeApi::Generation)
+      expect(game_index.generation.class).to eq(PokeApi::Generation)
     end
   end
 end

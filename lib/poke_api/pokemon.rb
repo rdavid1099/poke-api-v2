@@ -1,24 +1,40 @@
 module PokeApi
   # Pokemon object handling all data fetched from /pokemon
   class Pokemon < NamedApiResource
-    attr_reader :abilities,
-                :base_experience,
+    attr_reader :base_experience,
+                :height,
+                :is_default,
+                :order,
+                :weight,
+                :abilities,
                 :forms,
                 :game_indices,
-                :height,
                 :held_items,
-                :is_default,
                 :location_area_encounters,
                 :moves,
-                :order,
                 :species,
                 :sprites,
                 :stats,
-                :types,
-                :weight
+                :types
 
     def initialize(data)
       assign_data(data)
+    end
+
+    private
+
+    def custom_endpoint_object
+      {
+        abilities: PokemonAbility,
+        forms: PokemonForm,
+        game_indices: Common::VersionGameIndex,
+        held_items: PokemonHeldItem,
+        moves: PokemonMove,
+        species: PokemonSpecies,
+        sprites: PokemonSprites,
+        stats: PokemonStat,
+        types: PokemonType
+      }
     end
   end
 end

@@ -25,7 +25,7 @@ RSpec.describe PokeApi::Move::MoveMetaData do
       mmd = PokeApi::Move::MoveMetaData.new(raw_data)
 
       expect(mmd.class).to eq(PokeApi::Move::MoveMetaData)
-      # expect(mmd.ailment.class).to eq(PokeApi::MoveAilment)
+      expect(mmd.ailment.class).to eq(PokeApi::MoveAilment)
       expect(mmd.category.class).to eq(PokeApi::MoveCategory)
       expect(mmd.min_hits).to eq(nil)
       expect(mmd.max_hits).to eq(nil)
