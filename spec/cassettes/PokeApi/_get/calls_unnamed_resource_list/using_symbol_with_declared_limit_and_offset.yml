@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pokeapi.co/api/v2/ability/?limit=10&offset=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - pokeapi.co
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 May 2019 04:32:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5e563eb90aff2321b1051f538add66271556944343; expires=Sun, 03-May-20
+        04:32:23 GMT; path=/; domain=.pokeapi.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Etag:
+      - W/"344-FfmV63q3yAXksmoDe6Hn11LxxQY"
+      Function-Execution-Id:
+      - 44fzc3ig9xy5
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - a6cd06b49ce8a602932b1bece3da338f;o=1
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-lax8624-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1556943375.302078,VS0,VE501
+      Vary:
+      - accept-encoding, x-fh-requested-host, cookie, authorization
+      Cf-Cache-Status:
+      - HIT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d17c0240d687910-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":293,"next":"https://pokeapi.co/api/v2/ability/?offset=20&limit=10","previous":"https://pokeapi.co/api/v2/ability/?offset=0&limit=10","results":[{"name":"water-absorb","url":"https://pokeapi.co/api/v2/ability/11/"},{"name":"oblivious","url":"https://pokeapi.co/api/v2/ability/12/"},{"name":"cloud-nine","url":"https://pokeapi.co/api/v2/ability/13/"},{"name":"compound-eyes","url":"https://pokeapi.co/api/v2/ability/14/"},{"name":"insomnia","url":"https://pokeapi.co/api/v2/ability/15/"},{"name":"color-change","url":"https://pokeapi.co/api/v2/ability/16/"},{"name":"immunity","url":"https://pokeapi.co/api/v2/ability/17/"},{"name":"flash-fire","url":"https://pokeapi.co/api/v2/ability/18/"},{"name":"shield-dust","url":"https://pokeapi.co/api/v2/ability/19/"},{"name":"own-tempo","url":"https://pokeapi.co/api/v2/ability/20/"}]}'
+    http_version: 
+  recorded_at: Sat, 04 May 2019 04:32:23 GMT
+recorded_with: VCR 4.0.0

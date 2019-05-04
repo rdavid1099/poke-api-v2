@@ -10,6 +10,7 @@ module PokeApi
 
       data = Fetcher.call_uri(url)
       assign_data(data)
+      self
     end
 
     private
