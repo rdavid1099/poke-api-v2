@@ -19,6 +19,8 @@ module PokeApi
     private
 
     def sanitize_endpoints(unnamed_resource, endpoint_opts)
+      ErrorHandling.unnamed_resource_args if unnamed_resource && !endpoint_opts.empty?
+
       endpoint_opts[unnamed_resource] = { limit: 20 } if unnamed_resource
       endpoint_opts
     end

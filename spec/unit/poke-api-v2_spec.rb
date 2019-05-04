@@ -58,6 +58,11 @@ RSpec.describe PokeApi, :vcr  do
         expect(result.next_url).to eq('https://pokeapi.co/api/v2/ability/?offset=150&limit=50')
         expect(result.previous_url).to eq('https://pokeapi.co/api/v2/ability/?offset=50&limit=50')
       end
+
+      it 'raises an exception if endpoint symbol and params used' do
+        error_msg = "Too many arguments given; Only call get with a single symbol or a key-value pair"
+        expect{ PokeApi.get(:pokemon, ability: {limit: 50, page: 3}) }.to raise_error(ArgumentError, error_msg)
+      end
     end
   end
 
