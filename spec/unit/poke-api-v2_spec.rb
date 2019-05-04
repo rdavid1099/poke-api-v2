@@ -33,6 +33,37 @@ RSpec.describe PokeApi, :vcr  do
         expect(result.class).to eq(PokeApi::Version)
       end
     end
+
+    context 'calls unnamed resource list' do
+      it 'using endpoint symbol' do
+        result = PokeApi.get(:ability)
+        expect(result.class).to eq(PokeApi::ApiResourceList)
+        expect(result.count).to eq(293)
+        expect(result.results.count).to eq(20)
+      end
+
+      it 'using symbol with declared limit and offset' do
+        result = PokeApi.get(ability: {limit: 10, offset: 10})
+        expect(result.class).to eq(PokeApi::ApiResourceList)
+        expect(result.count).to eq(293)
+        expect(result.results.count).to eq(10)
+        expect(result.next_url).to eq('https://pokeapi.co/api/v2/ability/?offset=20&limit=10')
+        expect(result.previous_url).to eq('https://pokeapi.co/api/v2/ability/?offset=0&limit=10')
+      end
+
+      it 'using symbol with declared limit and page' do
+        result = PokeApi.get(ability: {limit: 50, page: 3})
+        expect(result.class).to eq(PokeApi::ApiResourceList)
+        expect(result.results.count).to eq(50)
+        expect(result.next_url).to eq('https://pokeapi.co/api/v2/ability/?offset=150&limit=50')
+        expect(result.previous_url).to eq('https://pokeapi.co/api/v2/ability/?offset=50&limit=50')
+      end
+
+      it 'raises an exception if endpoint symbol and params used' do
+        error_msg = "Too many arguments given; Only call get with a single symbol or a key-value pair"
+        expect{ PokeApi.get(:pokemon, ability: {limit: 50, page: 3}) }.to raise_error(ArgumentError, error_msg)
+      end
+    end
   end
 
   describe 'constants' do

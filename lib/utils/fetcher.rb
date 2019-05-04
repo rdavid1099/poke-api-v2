@@ -1,13 +1,26 @@
 # Simple object to handle all data fetching and parsing
 class Fetcher
-  def self.call(endpoint, query)
-    path = "#{BASE_URI}#{ENDPOINTS[endpoint]}#{query}"
-    call_uri(path)
-  end
+  class << self
+    def call(endpoint, query = nil)
+      path = "#{BASE_URI}#{ENDPOINTS[endpoint]}#{sanitize_query(query)}"
+      call_uri(path).merge(resource_name: endpoint)
+    end
 
-  def self.call_uri(path)
-    uri  = URI(path)
-    resp = Net::HTTP.get(uri)
-    JSON.parse(resp, symbolize_names: true).merge(url: path)
+    def call_uri(path)
+      uri  = URI(path)
+      resp = Net::HTTP.get(uri)
+      JSON.parse(resp, symbolize_names: true).merge(url: path)
+    end
+
+    def sanitize_query(query)
+      return query unless query.is_a? Hash
+
+      query[:limit] ||= 20
+      query[:offset] = query[:page] ? query[:limit] * (query[:page] - 1) : (query[:offset] || 0)
+      query.reduce('?') do |result, param|
+        key, value = param
+        result + (key == :page ? '' : "#{key}=#{value}&")
+      end.chop
+    end
   end
 end
