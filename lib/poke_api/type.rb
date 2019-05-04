@@ -16,7 +16,11 @@ module PokeApi
     private
 
     def custom_endpoint_object
-      { pokemon: TypePokemon }
+      {
+        damage_relations: TypeRelations,
+        game_indices: Common::GenerationGameIndex,
+        pokemon: TypePokemon
+      }
     end
   end
 end

@@ -12,7 +12,10 @@ module AssignmentHelpers
   end
 
   def endpoint_assignment(key:, custom_endpoint_object: {})
-    custom_endpoint_object[key] || ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[key.singularize]
+    singular_key = key.singularize
+    custom_endpoint_object[key] ||
+      ENDPOINT_OBJECTS[key] || ENDPOINT_OBJECTS[singular_key] ||
+      COMMON_MODELS[key] || COMMON_MODELS[singular_key]
   end
 
   def custom_endpoint_object

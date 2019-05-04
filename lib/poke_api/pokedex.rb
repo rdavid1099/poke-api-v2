@@ -10,5 +10,13 @@ module PokeApi
     def initialize(data)
       assign_data(data)
     end
+
+    private
+
+    def custom_endpoint_object
+      {
+        pokemon_entries: PokemonEntry
+      }
+    end
   end
 end
