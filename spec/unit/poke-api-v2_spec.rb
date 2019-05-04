@@ -33,6 +33,15 @@ RSpec.describe PokeApi, :vcr  do
         expect(result.class).to eq(PokeApi::Version)
       end
     end
+
+    context 'calls unnamed resource list' do
+      it 'using endpoint symbol' do
+        result = PokeApi.get(:ability)
+        expect(result.class).to eq(PokeApi::ApiResourceList)
+        expect(result.count).to eq(293)
+        expect(result.results.count).to eq(20)
+      end
+    end
   end
 
   describe 'constants' do
