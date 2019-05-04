@@ -27,11 +27,14 @@ RSpec.describe PokeApi, :vcr  do
       expect(result.url).to eq('https://pokeapi.co/api/v2/version/blue')
     end
 
-    context 'version' do
-      it 'gets version using id' do
-        result = PokeApi.get(version: 1)
-        expect(result.class).to eq(PokeApi::Version)
-      end
+    it 'gets version using id' do
+      result = PokeApi.get(version: 1)
+      expect(result.class).to eq(PokeApi::Version)
+    end
+
+    it 'raises an exception if endpoint does not exist' do
+      error_msg = "Undefined endpoint; 'wrong_endpoint' not defined by https://pokeapi.co/"
+      expect{ PokeApi.get(:wrong_endpoint) }.to raise_error(ArgumentError, error_msg)
     end
 
     context 'calls unnamed resource list' do
