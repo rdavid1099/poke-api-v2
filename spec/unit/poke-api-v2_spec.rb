@@ -41,6 +41,15 @@ RSpec.describe PokeApi, :vcr  do
         expect(result.count).to eq(293)
         expect(result.results.count).to eq(20)
       end
+
+      it 'using symbol with declared limit and offset' do
+        result = PokeApi.get(ability: {limit: 10, offset: 10})
+        expect(result.class).to eq(PokeApi::ApiResourceList)
+        expect(result.count).to eq(293)
+        expect(result.results.count).to eq(10)
+        expect(result.next_url).to eq('https://pokeapi.co/api/v2/ability/?offset=20&limit=10')
+        expect(result.previous_url).to eq('https://pokeapi.co/api/v2/ability/?offset=0&limit=10')
+      end
     end
   end
 
