@@ -2,7 +2,9 @@
 class Fetcher
   class << self
     def call(endpoint, query = nil)
-      path = "#{BASE_URI}#{ENDPOINTS[endpoint]}#{sanitize_query(query)}"
+      ErrorHandling.undefined_endpoint(endpoint) unless ENDPOINT_OBJECTS[endpoint]
+
+      path = "#{BASE_URI}#{endpoint.to_s.tr('_', '-')}/#{sanitize_query(query)}"
       call_uri(path).merge(resource_name: endpoint)
     end
 

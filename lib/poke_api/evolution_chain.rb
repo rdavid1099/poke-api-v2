@@ -29,7 +29,8 @@ module PokeApi
 
     def custom_endpoint_object
       {
-        baby_trigger_item: Item
+        baby_trigger_item: Item,
+        chain: ChainLink
       }
     end
   end

@@ -9,5 +9,10 @@ module ErrorHandling
       msg = 'Too many arguments given; Only call get with a single symbol or a key-value pair'
       raise ArgumentError, msg
     end
+
+    def undefined_endpoint(endpoint)
+      msg = "Undefined endpoint; '#{endpoint}' not defined by https://pokeapi.co/"
+      raise ArgumentError, msg
+    end
   end
 end
