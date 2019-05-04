@@ -15,7 +15,12 @@ class Fetcher
     def sanitize_query(query)
       return query unless query.is_a? Hash
 
-      query.reduce('?') { |result, param| result + "#{param[0]}=#{param[1]}&" }.chop
+      query[:limit] ||= 20
+      query[:offset] = query[:page] ? query[:limit] * (query[:page] - 1) : (query[:offset] || 0)
+      query.reduce('?') do |result, param|
+        key, value = param
+        result + (key == :page ? '' : "#{key}=#{value}&")
+      end.chop
     end
   end
 end
