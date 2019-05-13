@@ -129,3 +129,11 @@ PokeApi.get(pokemon_shape: {limit: 5, page: 2})
 ```
 
 All of the data presented follows the identical patterns described by the API. For a complete list of endpoints and keys, please check out the [PokéAPI Docs](https://pokeapi.co/docs/v2.html).
+
+## Contributing
+
+Contributions are welcome! Be sure to read our [contributing guide](https://github.com/rdavid1099/poke-api-v2/blob/master/CONTRIBUTING.md) before working on an issue. Bug reports and pull requests are welcome on GitHub at https://github.com/rdavid1099/poke-api-v2.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
