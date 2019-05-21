@@ -7,7 +7,11 @@ module PokeApi
       endpoints = sanitize_endpoints(unnamed_resource, endpoint_opts)
       endpoints.map do |key, value|
         klass = value.class == Hash ? ApiResourceList : ENDPOINT_OBJECTS[key]
-        klass.new(Fetcher.call(key, value))
+        begin
+          klass.new(Fetcher.call(key, value))
+        rescue JSON::ParserError
+          nil
+        end
       end.first
     end
 
