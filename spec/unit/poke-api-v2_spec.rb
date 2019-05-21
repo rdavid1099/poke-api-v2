@@ -37,6 +37,11 @@ RSpec.describe PokeApi, :vcr  do
       expect{ PokeApi.get(:wrong_endpoint) }.to raise_error(ArgumentError, error_msg)
     end
 
+    it 'returns nil if query is not found' do
+      result = PokeApi.get(version: 999999)
+      expect(result).to eq(nil)
+    end
+
     context 'calls unnamed resource list' do
       it 'using endpoint symbol' do
         result = PokeApi.get(:ability)
