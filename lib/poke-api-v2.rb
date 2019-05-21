@@ -6,12 +6,7 @@ module PokeApi
     def get(unnamed_resource = nil, **endpoint_opts)
       endpoints = sanitize_endpoints(unnamed_resource, endpoint_opts)
       endpoints.map do |key, value|
-        klass = value.class == Hash ? ApiResourceList : ENDPOINT_OBJECTS[key]
-        begin
-          klass.new(Fetcher.call(key, value))
-        rescue JSON::ParserError
-          nil
-        end
+        Fetcher.initialize_klass(key, value)
       end.first
     end
 
