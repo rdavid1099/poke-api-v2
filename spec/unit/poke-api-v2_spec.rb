@@ -73,4 +73,16 @@ RSpec.describe PokeApi, :vcr  do
       end
     end
   end
+
+  describe '#get!' do
+    it 'returns object if query is found' do
+      result = PokeApi.get!(pokemon: 'golem')
+      expect(result.class).to eq(PokeApi::Pokemon)
+    end
+
+    it 'raises an exception if query does not return anything' do
+      error_msg = "No results found for query 'version: 999999'"
+      expect{ PokeApi.get!(version: 999999) }.to raise_error(ResultsNotFound, error_msg)
+    end
+  end
 end
