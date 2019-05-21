@@ -1,12 +1,19 @@
 # Simple object to handle all data fetching and parsing
 class Fetcher
   class << self
-    def initialize_klass(key, value)
+    def get_endpoints(unnamed_resource, endpoint_opts, **opts)
+      endpoints = sanitize_endpoints(unnamed_resource, endpoint_opts)
+      endpoints.map do |key, value|
+        Fetcher.initialize_klass(key, value, opts)
+      end.first
+    end
+
+    def initialize_klass(key, value, opts)
       klass = value.class == Hash ? PokeApi::ApiResourceList : ENDPOINT_OBJECTS[key]
       begin
         klass.new(call(key, value))
       rescue JSON::ParserError
-        nil
+        ErrorHandling.results_not_found(key, value) if opts[:throw_error]
       end
     end
 
@@ -32,6 +39,13 @@ class Fetcher
         key, value = param
         result + (key == :page ? '' : "#{key}=#{value}&")
       end.chop
+    end
+
+    def sanitize_endpoints(unnamed_resource, endpoint_opts)
+      ErrorHandling.unnamed_resource_args if unnamed_resource && !endpoint_opts.empty?
+
+      endpoint_opts[unnamed_resource] = { limit: 20 } if unnamed_resource
+      endpoint_opts
     end
   end
 end
