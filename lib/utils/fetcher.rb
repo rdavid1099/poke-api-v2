@@ -1,6 +1,15 @@
 # Simple object to handle all data fetching and parsing
 class Fetcher
   class << self
+    def initialize_klass(key, value)
+      klass = value.class == Hash ? PokeApi::ApiResourceList : ENDPOINT_OBJECTS[key]
+      begin
+        klass.new(call(key, value))
+      rescue JSON::ParserError
+        nil
+      end
+    end
+
     def call(endpoint, query = nil)
       ErrorHandling.undefined_endpoint(endpoint) unless ENDPOINT_OBJECTS[endpoint]
 

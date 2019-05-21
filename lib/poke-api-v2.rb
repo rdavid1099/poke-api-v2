@@ -6,8 +6,7 @@ module PokeApi
     def get(unnamed_resource = nil, **endpoint_opts)
       endpoints = sanitize_endpoints(unnamed_resource, endpoint_opts)
       endpoints.map do |key, value|
-        klass = value.class == Hash ? ApiResourceList : ENDPOINT_OBJECTS[key]
-        klass.new(Fetcher.call(key, value))
+        Fetcher.initialize_klass(key, value)
       end.first
     end
 
