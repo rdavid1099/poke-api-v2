@@ -62,4 +62,4 @@ We are in the process of adding documentation using `YARD`. Please stay tuned fo
 
 ## Pull Requests
 
-All branches should be based off the `dev` branch and written using the following format, `<labe>/<issue number>-<summary of issue>` (ex: `chore/142-add-yard-for-documentation`). Before submitting a pull request, run `rake` in the top-level directory to verify that all tests are passing. Make your pull request to `dev` unless stated otherwise in the issue tracker. We will check for new pull requests at the end of every day and review/ comment on them as necessary.
+All branches should be based off the `dev` branch and written using the following format, `<issue label>/<issue number>-<summary of issue>` (ex: `chore/142-add-yard-for-documentation`). Before submitting a pull request, run `rake` in the top-level directory to verify that all tests are passing. Make your pull request to `dev` unless stated otherwise in the issue tracker. We will check for new pull requests at the end of every day and review/ comment on them as necessary.
