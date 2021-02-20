@@ -128,7 +128,7 @@ PokeApi.get(pokemon_shape: {limit: 5, page: 2})
 #    #<PokeApi::PokemonShape:0x007fe36c18f9f0 @name="tentacles", @url="https://pokeapi.co/api/v2/pokemon-shape/10/">]>
 ```
 
-All of the data presented follows the identical patterns described by the API. For a complete list of endpoints and keys, please check out the [PokéAPI Docs](https://pokeapi.co/docs/v2.html).
+All of the data presented follows the identical patterns described by the API. For a complete list of endpoints and keys, please check out the [PokéAPI Docs](https://pokeapi.co/docs/v2).
 
 ## Contributing
 
