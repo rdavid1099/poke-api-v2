@@ -3,9 +3,10 @@ class Fetcher
   class << self
     def get_endpoints(unnamed_resource, endpoint_opts, **opts)
       endpoints = sanitize_endpoints(unnamed_resource, endpoint_opts)
-      endpoints.map do |key, value|
+      results = endpoints.map do |key, value|
         Fetcher.initialize_klass(key, value, opts)
-      end.first
+      end
+      results.size == 1 ? results.first : results
     end
 
     def initialize_klass(key, value, opts)
