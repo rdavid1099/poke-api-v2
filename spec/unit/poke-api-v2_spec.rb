@@ -37,6 +37,11 @@ RSpec.describe PokeApi, :vcr  do
       expect{ PokeApi.get(:wrong_endpoint) }.to raise_error(ArgumentError, error_msg)
     end
 
+    it 'returns nil if query is not found' do
+      result = PokeApi.get(version: 999999)
+      expect(result).to eq(nil)
+    end
+
     context 'calls unnamed resource list' do
       it 'using endpoint symbol' do
         result = PokeApi.get(:ability)
@@ -66,6 +71,18 @@ RSpec.describe PokeApi, :vcr  do
         error_msg = "Too many arguments given; Only call get with a single symbol or a key-value pair"
         expect{ PokeApi.get(:pokemon, ability: {limit: 50, page: 3}) }.to raise_error(ArgumentError, error_msg)
       end
+    end
+  end
+
+  describe '#get!' do
+    it 'returns object if query is found' do
+      result = PokeApi.get!(pokemon: 'golem')
+      expect(result.class).to eq(PokeApi::Pokemon)
+    end
+
+    it 'raises an exception if query does not return anything' do
+      error_msg = "No results found for query 'version: 999999'"
+      expect{ PokeApi.get!(version: 999999) }.to raise_error(ResultsNotFound, error_msg)
     end
   end
 end

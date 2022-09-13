@@ -54,6 +54,13 @@ PokeApi.get(super_contest_effect: 1) # Fetches data from https://pokeapi.co/api/
 #   [#<PokeApi::Move:0x007fe36b196f30 @name="agility", @url="https://pokeapi.co/api/v2/move/97/">,
 ```
 
+`PokeApi#get` returns the result of the query or `nil` if no results are captured. You can also use the bang method `PokeApi#get!` which will throw an exception if no results are found.
+
+```ruby
+PokeApi.get!(version: 123456)
+# => ResultsNotFound: No results found for query 'version: 123456'
+```
+
 Almost all endpoints can be queried by either the name or id in accordance with the [PokéAPI Docs](https://pokeapi.co/docs/v2.html).
 
 You can also chain fetches together allowing Poke-Api-V2 to make multiple API calls with one command.

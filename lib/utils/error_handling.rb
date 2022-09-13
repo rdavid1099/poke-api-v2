@@ -14,5 +14,14 @@ module ErrorHandling
       msg = "Undefined endpoint; '#{endpoint}' not defined by https://pokeapi.co/"
       raise ArgumentError, msg
     end
+
+    def results_not_found(endpoint, query)
+      msg = "No results found for query '#{endpoint}: #{query}'"
+      raise ResultsNotFound, msg
+    end
   end
+end
+
+# Define custom error class for more descriptive exceptions
+class ResultsNotFound < StandardError
 end
