@@ -1,7 +1,7 @@
 RSpec.describe PokeApi, :vcr  do
   describe 'version' do
     it 'should be the correct number' do
-      expect(PokeApi::VERSION).to eq('0.1.0')
+      expect(PokeApi::VERSION).to eq('0.1.1')
     end
   end
 
