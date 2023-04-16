@@ -5,14 +5,14 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1f0142f320ea41ce5fed/maintainability)](https://codeclimate.com/github/rdavid1099/poke-api-v2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1f0142f320ea41ce5fed/test_coverage)](https://codeclimate.com/github/rdavid1099/poke-api-v2/test_coverage)
 
-A simplified interface for interacting with the [PokéAPI](https://pokeapi.co/docs/v2.html) version 2 - `https://pokeapi.co/api/v2/`
+A simplified interface for interacting with the [PokéAPI](https://pokeapi.co/docs/v2) version 2 - `https://pokeapi.co/api/v2/`
 
 ## Requirements
 * Ruby >= 2.0.0
 
 Poke-Api-V2 depends on these other gems for usage at runtime:
-* [net/http] consumes the [PokéAPI](https://pokeapi.co/docs/v2.html)
-* [json] parses the [PokéAPI](https://pokeapi.co/docs/v2.html) response
+* [net/http] consumes the [PokéAPI](https://pokeapi.co/docs/v2)
+* [json] parses the [PokéAPI](https://pokeapi.co/docs/v2) response
 
 ## Installation
 Add the following line to a Gemfile:
@@ -54,7 +54,7 @@ PokeApi.get(super_contest_effect: 1) # Fetches data from https://pokeapi.co/api/
 #   [#<PokeApi::Move:0x007fe36b196f30 @name="agility", @url="https://pokeapi.co/api/v2/move/97/">,
 ```
 
-Almost all endpoints can be queried by either the name or id in accordance with the [PokéAPI Docs](https://pokeapi.co/docs/v2.html).
+Almost all endpoints can be queried by either the name or id in accordance with the [PokéAPI Docs](https://pokeapi.co/docs/v2).
 
 You can also chain fetches together allowing Poke-Api-V2 to make multiple API calls with one command.
 
@@ -68,7 +68,7 @@ evolution_chain.chain.evolves_to.first.species.name
 # => "ivysaur"
 ```
 
-The [PokéAPI](https://pokeapi.co/docs/v2.html) also allows you to create lists of paginated endpoints for any resource. This can be achieved in a couple different ways using Poke-Api-V2.
+The [PokéAPI](https://pokeapi.co/docs/v2) also allows you to create lists of paginated endpoints for any resource. This can be achieved in a couple different ways using Poke-Api-V2.
 
 First, you can call any endpoint without passing an id or name. This will generate a list of the 20 first resources allowing pagination per 20.
 
